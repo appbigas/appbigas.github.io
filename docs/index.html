@@ -18,21 +18,50 @@
       padding: 0;
       background-color: var(--bg-dark);
       color: var(--text-light);
+      display: flex;
     }
     header {
       background-color: var(--bg-light);
       color: var(--text-light);
       padding: 20px 40px;
       border-bottom: 1px solid #444;
+      width: 100%;
     }
     header h1 {
       margin: 0;
       color: var(--accent);
     }
+    nav {
+      width: 220px;
+      background-color: var(--bg-light);
+      padding: 20px;
+      border-right: 1px solid #333;
+      position: fixed;
+      height: 100vh;
+      overflow-y: auto;
+    }
+    nav h3 {
+      color: var(--accent);
+      margin-top: 0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 12px 0;
+    }
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     main {
+      margin-left: 240px;
       padding: 40px;
       max-width: 900px;
-      margin: auto;
     }
     h2 {
       border-bottom: 2px solid #444;
@@ -63,6 +92,8 @@
       color: #888;
       border-top: 1px solid #333;
       background-color: var(--bg-light);
+      margin-left: 240px;
+      width: 100%;
     }
     a {
       color: var(--accent);
@@ -70,46 +101,77 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>ReactorAI Documentation</h1>
-    <p>A macOS client for interacting with Ollama AI models</p>
-  </header>
-  <main>
-    <h2>Introduction</h2>
-    <p>ReactorAI is an independent chatbot client designed specifically to integrate seamlessly with <strong>Ollama</strong>, an open-source AI model server. It provides a user-friendly, modern interface tailored for macOS, allowing you to easily interact with AI models hosted locally or remotely.</p>
-
-    <p><strong>Important Note:</strong> To use ReactorAI, you must have the Ollama server installed either locally on your machine or have access to a remote Ollama instance. The app includes detailed instructions for quick and easy setup.</p>
-
-    <h2>Key Features</h2>
+  <nav>
+    <h3>Guide</h3>
     <ul>
-      <li><strong>Local and Remote Connectivity:</strong> Smoothly connect to AI models hosted on your computer or accessed remotely.</li>
-      <li><strong>Efficient Chat Management:</strong> Organize, revisit, and manage your chat history effortlessly with an intuitive session management system.</li>
-      <li><strong>Search Conversations:</strong> Quickly find information within any conversation session.</li>
-      <li><strong>Backup and Restore:</strong> Safeguard your conversations by easily backing up and restoring selected sessions.</li>
-      <li><strong>Privacy and Security:</strong> Benefit from secure interactions through local processing options.</li>
-      <li><strong>Flexible Model Selection:</strong> Switch seamlessly between multiple Ollama AI models.</li>
-      <li><strong>Session Instructions:</strong> Use custom system prompts to guide AI behavior per session.</li>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#features">Key Features</a></li>
+      <li><a href="#limitations">Limitations</a></li>
+      <li><a href="#screenshots">Screenshots</a></li>
+      <li><a href="#getting-started">Getting Started</a></li>
+      <li><a href="#step-1">1. Install Ollama</a></li>
+      <li><a href="#step-2">2. Download ReactorAI</a></li>
+      <li><a href="#step-3">3. Run the App</a></li>
+      <li><a href="#step-4">4. Connect to Model</a></li>
+      <li><a href="#step-5">5. Start Chatting</a></li>
     </ul>
+  </nav>
 
-    <h2>Current Limitations</h2>
-    <p>ReactorAI is independently developed and is not affiliated with the creators of the Ollama server. It aims to enhance your experience by providing intuitive and streamlined access to powerful AI capabilities.</p>
+  <div style="width:100%">
+    <header>
+      <h1>ReactorAI Documentation</h1>
+      <p>A macOS client for interacting with Ollama AI models</p>
+    </header>
+    <main>
+      <h2 id="introduction">Introduction</h2>
+      <p>ReactorAI is an independent chatbot client designed specifically to integrate seamlessly with <strong>Ollama</strong>, an open-source AI model server. It provides a user-friendly, modern interface tailored for macOS, allowing you to easily interact with AI models hosted locally or remotely.</p>
 
-    <h2>Interface Screenshots</h2>
-    <div class="screenshot">
-      <h3>Home Screen</h3>
-      <img src="reactorai_home_screen.png" alt="ReactorAI Home Screen" />
-    </div>
+      <p><strong>Important Note:</strong> To use ReactorAI, you must have the Ollama server installed either locally on your machine or have access to a remote Ollama instance. The app includes detailed instructions for quick and easy setup.</p>
 
-    <div class="screenshot">
-      <h3>Chat Interface</h3>
-      <img src="reactorai2.png" alt="ReactorAI Chat Interface" />
-    </div>
+      <h2 id="features">Key Features</h2>
+      <ul>
+        <li><strong>Local and Remote Connectivity:</strong> Smoothly connect to AI models hosted on your computer or accessed remotely.</li>
+        <li><strong>Efficient Chat Management:</strong> Organize, revisit, and manage your chat history effortlessly with an intuitive session management system.</li>
+        <li><strong>Search Conversations:</strong> Quickly find information within any conversation session.</li>
+        <li><strong>Backup and Restore:</strong> Safeguard your conversations by easily backing up and restoring selected sessions.</li>
+        <li><strong>Privacy and Security:</strong> Benefit from secure interactions through local processing options.</li>
+        <li><strong>Flexible Model Selection:</strong> Switch seamlessly between multiple Ollama AI models.</li>
+        <li><strong>Session Instructions:</strong> Use custom system prompts to guide AI behavior per session.</li>
+      </ul>
 
-    <h2>Getting Started</h2>
-    <p>Coming soon: a step-by-step guide for installation and setup, including how to configure ReactorAI with your local or remote Ollama instance.</p>
-  </main>
-  <footer>
-    <p>&copy; 2025 ReactorAI. This project is independently developed and open-source.</p>
-  </footer>
+      <h2 id="limitations">Current Limitations</h2>
+      <p>ReactorAI is independently developed and is not affiliated with the creators of the Ollama server. It aims to enhance your experience by providing intuitive and streamlined access to powerful AI capabilities.</p>
+
+      <h2 id="screenshots">Interface Screenshots</h2>
+      <div class="screenshot">
+        <h3>Home Screen</h3>
+        <img src="images/home_screen.png" alt="ReactorAI Home Screen" />
+      </div>
+
+      <div class="screenshot">
+        <h3>Chat Interface</h3>
+        <img src="reactorai2.png" alt="ReactorAI Chat Interface" />
+      </div>
+
+      <h2 id="getting-started">Getting Started</h2>
+      <h3 id="step-1">1. Install Ollama</h3>
+      <p>Download and install the Ollama server from its official repository or website. Follow platform-specific instructions to get it running locally.</p>
+
+      <h3 id="step-2">2. Download ReactorAI</h3>
+      <p>Download the latest release of the ReactorAI macOS app from the official GitHub releases page or your preferred distribution platform.</p>
+
+      <h3 id="step-3">3. Run the App</h3>
+      <p>Open the ReactorAI app. It should start and present you with the interface shown in the screenshots above.</p>
+
+      <h3 id="step-4">4. Connect to Model</h3>
+      <p>In the settings or model dropdown, enter the URL of your local or remote Ollama server and choose a model to begin chatting.</p>
+
+      <h3 id="step-5">5. Start Chatting</h3>
+      <p>You're ready to go! Start a new session, enter your prompt, and begin your conversation with the AI model of your choice.</p>
+    </main>
+    <footer>
+      <p>&copy; 2025 ReactorAI. This project is independently developed and open-source.</p>
+    </footer>
+  </div>
 </body>
 </html>
