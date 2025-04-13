@@ -1,246 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W79MEM2WFD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-W79MEM2WFD');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ReactorAI – a cross-platform Client for Ollama | Documentation</title>
+  <title>ReactorAI – Ollama Client App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="canonical" href="https://appbigas.com" />
 
   <!-- ✅ SEO Meta -->
-  <meta name="description" content="ReactorAI is a sleek macOS app for connecting to Ollama's local or remote AI models. Explore features, setup, and documentation here." />
-  <meta name="keywords" content="ReactorAI, Ollama, ollama client, ollama desktop client, ollama desktop, ollama windows, ollama ios,ollama mac, macOS AI client, local LLM, AI chat app, open source AI, Ollama documentation, ReactorAI guide" />
+  <meta name="description" content="ReactorAI is a sleek app for connecting to Ollama's local or remote AI models. Available on macOS, iOS, and Windows." />
+  <meta name="keywords" content="ReactorAI, Ollama, ollama client, ollama desktop client, ollama desktop, ollama windows, ollama ios, ollama mac, macOS AI client, local LLM, AI chat app, open source AI, Ollama documentation, ReactorAI guide" />
   <meta name="author" content="ReactorAI Team" />
   <meta name="robots" content="index, follow" />
 
-  <!-- ✅ Social Meta (Open Graph for Facebook, LinkedIn) -->
+  <!-- ✅ Social Meta -->
   <meta property="og:title" content="ReactorAI – Chat with Ollama Locally" />
-  <meta property="og:description" content="ReactorAI is a cross platform app for Ollama, supporting local and remote model hosting. Browse the full user documentation and setup guide." />
+  <meta property="og:description" content="ReactorAI is a native app for Ollama, supporting local and remote model hosting. Explore the full guide here." />
   <meta property="og:image" content="https://appbigas.com/images/home_screen.png" />
   <meta property="og:url" content="https://appbigas.com" />
   <meta property="og:type" content="website" />
 
   <!-- ✅ Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ReactorAI – Ollama cross platform Client" />
-  <meta name="twitter:description" content="Documentation for ReactorAI, a macOS client for Ollama AI model server. Local + remote models supported." />
+  <meta name="twitter:title" content="ReactorAI – Ollama macOS, iOS, Windows Client" />
+  <meta name="twitter:description" content="Documentation for ReactorAI, a cross-platform client for Ollama AI model server." />
   <meta name="twitter:image" content="https://appbigas.com/images/home_screen.png" />
 
-  <!-- ✅ Apple Smart Banner (Optional) -->
+  <!-- ✅ Apple Smart Banner -->
   <meta name="apple-itunes-app" content="app-id=6739567267" />
 
-  <link rel="canonical" href="https://appbigas.com" />
-  <style>
-    :root {
-      --bg-dark: #1e1e1e;
-      --bg-light: #2a2a2a;
-      --text-light: #eaeaea;
-      --accent: #00bcd4;
-    }
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: var(--bg-dark);
-      color: var(--text-light);
-      display: flex;
-      flex-direction: column;
-    }
-    header {
-      background-color: var(--bg-light);
-      color: var(--text-light);
-      padding: 20px 40px;
-      border-bottom: 1px solid #444;
-      width: 100%;
-    }
-    header h1 {
-      margin: 0;
-      color: var(--accent);
-    }
-    .container {
-      display: flex;
-      flex: 1;
-    }
-    nav {
-      width: 220px;
-      background-color: var(--bg-light);
-      padding: 20px;
-      border-right: 1px solid #333;
-      height: 100vh;
-      overflow-y: auto;
-      position: sticky;
-      top: 0;
-    }
-    nav h3 {
-      color: var(--accent);
-      margin-top: 0;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-    nav ul li {
-      margin: 12px 0;
-    }
-    nav a {
-      color: var(--text-light);
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      border-bottom: 2px solid #444;
-      padding-bottom: 6px;
-      color: var(--accent);
-    }
-    .screenshot {
-      margin: 20px 0;
-      border: 1px solid #333;
-      background: #1c1c1c;
-      padding: 8px;
-    }
-    .screenshot img {
-      width: 100%;
-      max-width: 100%;
-      border-radius: 4px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 8px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #888;
-      border-top: 1px solid #333;
-      background-color: var(--bg-light);
-      width: 100%;
-    }
-    a {
-      color: var(--accent);
-    }
-
-    /* Responsive behavior */
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-      nav {
-        width: 100%;
-        height: auto;
-        position: relative;
-        border-right: none;
-        border-bottom: 1px solid #333;
-      }
-      main {
-        padding: 20px;
-      }
-    }
-  </style>
+  <!-- ✅ Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W79MEM2WFD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W79MEM2WFD');
+  </script>
 </head>
 <body>
   <header>
-    <h1>ReactorAI Documentation</h1>
-    <p>A macOS, iOS and Windows client for interacting with Ollama AI models</p>
-    
-    <!-- App Store Badge -->
-    <a href="https://apps.apple.com/eg/app/reactorai/id6739567267" target="_blank" rel="noopener">
-      <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
-           alt="Download on the App Store"
-           style="margin-top: 10px; height: 45px; margin-right: 12px;" />
-    </a>
-  
-    <!-- Microsoft Store Badge -->
-    <a href="https://apps.microsoft.com/store/detail/9NLWPTD23PG0?cid=DevShareMCLPCB" target="_blank" rel="noopener">
-      <img src="https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png"
-           alt="Get it from Microsoft"
-           style="margin-top: 10px; height: 45px;" />
-    </a>
+    <h1>ReactorAI</h1>
+    <p>Chat with Ollama AI models on macOS, iOS, and Windows</p>
+
+    <!-- Store Badges -->
+    <div class="store-links">
+      <a href="https://apps.apple.com/eg/app/reactorai/id6739567267" target="_blank" rel="noopener">
+        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
+             alt="Download on the App Store" />
+      </a>
+      <a href="https://apps.microsoft.com/store/detail/9NLWPTD23PG0?cid=DevShareMCLPCB" target="_blank" rel="noopener">
+        <img src="https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png"
+             alt="Get it from Microsoft" />
+      </a>
+    </div>
+    <div class="store-links">
+      <a href="https://www.buymeacoffee.com/ayman3000" target="_blank" rel="noopener">
+        <img src="https://cdn.ko-fi.com/cdn/kofi5.png?v=3" alt="Buy Me a Coffee" style="height: 36px; margin-top: 12px;" />
+      </a>
+      <p style="margin-top: 8px; font-size: 0.95em; color: #aaa;">
+        Like ReactorAI? Support future updates ❤️
+      </p>
+    </div>
   </header>
-  <div class="container">
-    <nav>
-      <h3>Guide</h3>
-      <ul>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#features">Key Features</a></li>
-        <li><a href="#limitations">Limitations</a></li>
-        <li><a href="#screenshots">Screenshots</a></li>
-        <li><a href="#getting-started">Getting Started</a></li>
-        <li><a href="#step-1">1. Install Ollama</a></li>
-        <li><a href="#step-2">2. Run the App</a></li>
-        <li><a href="#step-3">3. Connect to Model</a></li>
-        <li><a href="#step-4">4. Start Chatting</a></li>
-      </ul>
-    </nav>
-    <main>
-      <h2 id="introduction">Introduction</h2>
-      <p>ReactorAI is an independent chatbot client designed specifically to integrate seamlessly with <strong>Ollama</strong>, an open-source AI model server. It provides a user-friendly, modern interface tailored for macOS, iOS and Windows, allowing you to easily interact with AI models hosted locally or remotely.</p>
 
-      <p><strong>Important Note:</strong> To use ReactorAI, you must have the Ollama server installed either locally on your machine or have access to a remote Ollama instance. The app includes detailed instructions for quick and easy setup.</p>
+  <!-- Simple Top Navigation -->
+  <nav class="topnav">
+    <a href="installation.html">Installation</a>
+    <a href="documentation.html">Documentation</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
 
-      <h2 id="features">Key Features</h2>
-      <ul>
-        <li><strong>Local and Remote Connectivity:</strong> Smoothly connect to AI models hosted on your computer or accessed remotely.</li>
-        <li><strong>Efficient Chat Management:</strong> Organize, revisit, and manage your chat history effortlessly with an intuitive session management system.</li>
-        <li><strong>Search Conversations:</strong> Quickly find information within any conversation session.</li>
-        <li><strong>Backup and Restore:</strong> Safeguard your conversations by easily backing up and restoring selected sessions.</li>
-        <li><strong>Privacy and Security:</strong> Benefit from secure interactions through local processing options.</li>
-        <li><strong>Flexible Model Selection:</strong> Switch seamlessly between multiple Ollama AI models.</li>
-        <li><strong>Session Instructions:</strong> Use custom system prompts to guide AI behavior per session.</li>
-      </ul>
+  <main>
+    <section>
+      <h2>Welcome to ReactorAI</h2>
+      <p>ReactorAI is a beautifully designed, cross-platform client app that lets you interact with Ollama's local or remote AI models seamlessly.</p>
+      <p>It's simple, privacy-respecting, and available on all major platforms.</p>
+    </section>
+  </main>
 
-      <h2 id="limitations">Current Limitations</h2>
-      <p>ReactorAI is independently developed and is not affiliated with the creators of the Ollama server. It aims to enhance your experience by providing intuitive and streamlined access to powerful AI capabilities.</p>
-
-      <h2 id="screenshots">Interface Screenshots</h2>
-      <div class="screenshot">
-        <h3>Home Screen</h3>
-        <img src="./images/home_screen.png" alt="ReactorAI Home Screen" />
-      </div>
-
-      <div class="screenshot">
-        <h3>Chat Interface</h3>
-        <img src="reactorai2.png" alt="ReactorAI Chat Interface" />
-      </div>
-
-      <h2 id="getting-started">Getting Started</h2>
-      <h3 id="step-1">1. Install Ollama</h3>
-      <p>Download and install the Ollama server from its official repository or website. Follow platform-specific instructions to get it running locally.</p>
-
-      <h3 id="step-2">2. Run the App</h3>
-      <p>Open the ReactorAI app. It should start and present you with the interface shown in the screenshots above.</p>
-
-      <h3 id="step-3">3. Connect to Model</h3>
-      <p>In the settings or model dropdown, enter the URL of your local or remote Ollama server and choose a model to begin chatting.</p>
-
-      <h3 id="step-4">4. Start Chatting</h3>
-      <p>You're ready to go! Start a new session, enter your prompt, and begin your conversation with the AI model of your choice.</p>
-    </main>
-  </div>
   <footer>
-    <p>&copy; 2025 ReactorAI. This project is independently developed.</p>
+    <p>&copy; 2025 ReactorAI. All rights reserved.</p>
   </footer>
 </body>
 </html>

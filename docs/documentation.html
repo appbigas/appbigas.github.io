@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentation – ReactorAI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="canonical" href="https://appbigas.com/documentation.html" />
+
+  <!-- ✅ SEO Meta -->
+  <meta name="description" content="Complete documentation for ReactorAI: features, usage, screenshots, and tips for using Ollama models locally or remotely." />
+  <meta name="keywords" content="ReactorAI documentation, Ollama app help, ReactorAI guide, Ollama client usage, macOS AI app, Windows AI app, iOS chat AI" />
+  <meta name="author" content="ReactorAI Team" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ✅ Social Meta -->
+  <meta property="og:title" content="ReactorAI Documentation – Guide for Ollama Users" />
+  <meta property="og:description" content="Browse the full guide to use ReactorAI with Ollama on macOS, iOS, and Windows. Features, screenshots, and how-tos included." />
+  <meta property="og:image" content="https://appbigas.com/images/home_screen.png" />
+  <meta property="og:url" content="https://appbigas.com/documentation.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ReactorAI – Full Documentation" />
+  <meta name="twitter:description" content="ReactorAI full user guide to connect and chat with Ollama AI models on all platforms." />
+  <meta name="twitter:image" content="https://appbigas.com/images/home_screen.png" />
+
+  <!-- ✅ Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W79MEM2WFD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W79MEM2WFD');
+  </script>
+  <style>
+    .screenshot img {
+      cursor: zoom-in;
+      transition: transform 0.3s ease;
+    }
+    .screenshot img.zoomed {
+      transform: scale(2);
+      cursor: zoom-out;
+      z-index: 9999;
+      position: relative;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.screenshot img').forEach(img => {
+        img.addEventListener('click', () => {
+          img.classList.toggle('zoomed');
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>ReactorAI Documentation</h1>
+    <p>Learn how to use the app and explore all available features</p>
+    <div class="store-links">
+        <a href="https://apps.apple.com/eg/app/reactorai/id6739567267" target="_blank" rel="noopener">
+          <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
+               alt="Download on the App Store"
+               style="height: 45px; margin-right: 16px;" />
+        </a>
+        <a href="https://apps.microsoft.com/store/detail/9NLWPTD23PG0" target="_blank" rel="noopener">
+          <img src="https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png"
+               alt="Get it from Microsoft"
+               style="height: 45px;" />
+        </a>
+        <div style="margin-top: 20px;">
+          <a href="https://www.buymeacoffee.com/ayman3000" target="_blank" rel="noopener">
+            <img src="https://cdn.ko-fi.com/cdn/kofi5.png?v=3" alt="Buy Me a Coffee" style="height: 36px;" />
+          </a>
+          <p style="margin-top: 8px; font-size: 0.95em; color: #aaa;">
+            Like ReactorAI? Support future updates ❤️
+          </p>
+        </div>
+      </div>
+  </header>
+
+  <nav class="topnav">
+    <a href="index.html">Home</a>
+    <a href="installation.html">Installation</a>
+    <a href="documentation.html">Documentation</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  <div class="container">
+    <aside>
+      <h2>Sections</h2>
+      <a href="#features">🔧 Features</a>
+      <a href="#screenshots">🖼 Screenshots</a>
+      <a href="#getting-started">🚀 Getting Started</a>
+    </aside>
+
+    <main>
+      <section>
+        <h2 id="features">Key Features</h2>
+        <ul>
+          <li><strong>Local & Remote Connectivity:</strong> Connect to AI models hosted locally or on a remote server.</li>
+          <li><strong>Model Selection:</strong> Choose from multiple Ollama models using a dropdown menu.</li>
+          <li><strong>Session Management:</strong> View, rename, search, and manage your chat history.</li>
+          <li><strong>Session Prompts:</strong> Customize system messages to guide the model’s behavior.</li>
+          <li><strong>Backup & Restore:</strong> Export and import chats for safekeeping.</li>
+          <li><strong>Security:</strong> All data stays on your device unless using a remote server.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="screenshots">Screenshots</h2>
+        <div class="screenshot">
+          <h3>Home Screen</h3>
+          <div class="screenshot">
+            <img src="https://reactorai.s3.us-east-2.amazonaws.com/home_screen.png" alt="ReactorAI Home Screen" />
+          </div>
+        </div>
+        <div class="screenshot">
+          <h3>Chat Interface</h3>
+          <img src="https://reactorai.s3.us-east-2.amazonaws.com/reactor_conversation.png" alt="Chat Interface" />
+        </div>
+        <div class="screenshot">
+          <h3>Settings</h3>
+          <div class="screenshot">
+            <img src="https://reactorai.s3.us-east-2.amazonaws.com/settings.png" alt="Settings Panel" />
+          </div>
+        </div>
+        <div class="screenshot">
+          <h3>Model Selector</h3>
+          <img src="https://reactorai.s3.us-east-2.amazonaws.com/models.png" alt="Model Selection Menu" />
+        </div>
+      </section>
+
+      <section>
+        <h2 id="getting-started">Using the App</h2>
+        <ol>
+          <li>Install and launch the app on your platform</li>
+          <li>In settings, enter your local or remote Ollama URL</li>
+          <li>Select a model and start a new chat session</li>
+          <li>Use the session prompt input to customize behavior</li>
+          <li>Manage chats via the sidebar: search, rename, delete</li>
+        </ol>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ReactorAI. All rights reserved.</p>
+  </footer>
+</body>
+</html>
