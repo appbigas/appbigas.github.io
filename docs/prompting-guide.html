@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompting Guide – ReactorAI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="canonical" href="https://appbigas.com/prompting-guide.html" />
+
+  <!-- ✅ SEO Meta -->
+  <meta name="description" content="Master AI prompting techniques with ReactorAI. Learn effective prompting strategies for Ollama and Gemini models, with examples and best practices." />
+  <meta name="keywords" content="ReactorAI prompting guide, AI prompting techniques, Ollama prompts, Gemini prompts, AI chat tips, effective AI prompting, LLM prompting best practices" />
+  <meta name="author" content="ReactorAI Team" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ✅ Social Meta -->
+  <meta property="og:title" content="ReactorAI Prompting Guide – Master AI Communication" />
+  <meta property="og:description" content="Complete guide to effective AI prompting with ReactorAI, Ollama, and Gemini models." />
+  <meta property="og:image" content="https://appbigas.com/images/home_screen.png" />
+  <meta property="og:url" content="https://appbigas.com/prompting-guide.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ReactorAI – Complete Prompting Guide" />
+  <meta name="twitter:description" content="Learn advanced AI prompting techniques for better results with ReactorAI." />
+  <meta name="twitter:image" content="https://appbigas.com/images/home_screen.png" />
+
+  <!-- ✅ Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9H9MF1VFSR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9H9MF1VFSR');
+  </script>
+
+  <!-- ✅ Structured Data - HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Master AI Prompting with ReactorAI",
+    "description": "Complete guide to effective AI prompting techniques for Ollama and Gemini models, with examples and best practices.",
+    "url": "https://appbigas.com/prompting-guide.html",
+    "image": "https://reactorai.s3.amazonaws.com/logo.png",
+    "author": {
+      "@type": "Organization",
+      "name": "ReactorAI Team"
+    },
+    "datePublished": "2025-01-09",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Learn Prompting Basics",
+        "text": "Understand core principles: be specific, provide context, set expectations, and iterate."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Apply Advanced Techniques",
+        "text": "Use chain of thought prompting, role-based prompting, and few-shot learning for better results."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Optimize for Your Model",
+        "text": "Apply model-specific tips for Ollama (Llama, Mistral) and Gemini (Pro, Flash) models."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Use Session Prompts",
+        "text": "Configure ReactorAI's session prompts to set consistent AI behavior across conversations."
+      }
+    ],
+    "supply": [
+      {
+        "@type": "HowToSupply",
+        "name": "ReactorAI Application"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 12px;">
+      <img src="https://reactorai.s3.amazonaws.com/logo.png" alt="ReactorAI Logo" style="height: 50px;" />
+      <h1 style="margin: 0;">ReactorAI Prompting Guide</h1>
+    </div>
+    <p>Master the art of AI communication with effective prompting techniques</p>
+  </header>
+
+  <nav class="topnav">
+    <a href="index.html">Home</a>
+    <a href="installation.html">Installation</a>
+    <a href="documentation.html">Documentation <span style="background: #ff4444; color: white; font-size: 0.7em; padding: 2px 6px; border-radius: 10px; margin-left: 4px;">NEW</span></a>
+    <a href="prompting-guide.html">Prompting Guide</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  <div class="container">
+    <aside>
+      <h2>Guide Sections</h2>
+      <a href="#basics">📚 Prompting Basics</a>
+      <a href="#techniques">🎯 Advanced Techniques</a>
+      <a href="#ollama-tips">🦙 Ollama-Specific Tips</a>
+      <a href="#gemini-tips">💎 Gemini-Specific Tips</a>
+      <a href="#session-prompts">⚙️ Session Prompts</a>
+      <a href="#examples">💡 Example Prompts</a>
+      <a href="#troubleshooting">🔧 Troubleshooting</a>
+    </aside>
+
+    <main>
+      <section>
+        <h2 id="basics">📚 Prompting Basics</h2>
+        <p>Effective prompting is the key to getting the best results from AI models. Here are the fundamental principles:</p>
+        
+        <h3>Core Principles</h3>
+        <ul>
+          <li><strong>Be Specific:</strong> Clear, detailed requests yield better results</li>
+          <li><strong>Provide Context:</strong> Give the AI background information</li>
+          <li><strong>Set Expectations:</strong> Define the format and style you want</li>
+          <li><strong>Iterate:</strong> Refine your prompts based on responses</li>
+        </ul>
+
+        <h3>Prompt Structure</h3>
+        <div style="background: #2a2a2a; padding: 20px; border-radius: 8px; margin: 15px 0;">
+          <code style="color: #4fc3f7;">
+            [Context] + [Task] + [Format] + [Constraints]
+          </code>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="techniques">🎯 Advanced Techniques</h2>
+        
+        <h3>Chain of Thought Prompting</h3>
+        <p>Ask the AI to think step-by-step for complex problems:</p>
+        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
+          <p style="color: #4fc3f7; margin: 0;"><strong>Example:</strong> "Solve this step by step, showing your reasoning at each stage..."</p>
+        </div>
+
+        <h3>Role-Based Prompting</h3>
+        <p>Assign a specific role or persona to the AI:</p>
+        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
+          <p style="color: #4fc3f7; margin: 0;"><strong>Example:</strong> "Act as a senior software engineer and review this code..."</p>
+        </div>
+
+        <h3>Few-Shot Learning</h3>
+        <p>Provide examples of the desired input-output format:</p>
+        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
+          <p style="color: #4fc3f7; margin: 0;"><strong>Example:</strong> "Here are 2 examples of good summaries: [examples]. Now summarize this text in the same style..."</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="ollama-tips">🦙 Ollama-Specific Tips</h2>
+        
+        <h3>Model Selection</h3>
+        <ul>
+          <li><strong>Llama 3.2:</strong> Great for general conversation and reasoning</li>
+          <li><strong>Code Llama:</strong> Optimized for programming tasks</li>
+          <li><strong>Mistral:</strong> Excellent for multilingual tasks</li>
+          <li><strong>Phi-3:</strong> Fast responses, good for quick tasks</li>
+        </ul>
+
+        <h3>Context Management</h3>
+        <p>Ollama models have context limits. For long conversations:</p>
+        <ul>
+          <li>Summarize previous context when needed</li>
+          <li>Use ReactorAI's context selection feature</li>
+          <li>Start new sessions for different topics</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="gemini-tips">💎 Gemini-Specific Tips</h2>
+        
+        <h3>Gemini Model Variants</h3>
+        <ul>
+          <li><strong>Gemini Pro:</strong> Best for complex reasoning and analysis</li>
+          <li><strong>Gemini Flash:</strong> Faster responses for simpler tasks</li>
+        </ul>
+
+        <h3>Leveraging Gemini's Strengths</h3>
+        <ul>
+          <li><strong>Multimodal:</strong> Combine text with images for richer context</li>
+          <li><strong>Large Context:</strong> Can handle very long documents</li>
+          <li><strong>Code Understanding:</strong> Excellent at code analysis and generation</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="session-prompts">⚙️ Session Prompts (System Messages)</h2>
+        <p>Use ReactorAI's session prompt feature to set consistent behavior:</p>
+
+        <h3>General Assistant</h3>
+        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
+          <code style="color: #4fc3f7;">
+            You are a helpful, accurate, and concise assistant. Always provide clear explanations and ask for clarification when needed.
+          </code>
+        </div>
+
+        <h3>Code Review Assistant</h3>
+        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
+          <code style="color: #4fc3f7;">
+            You are an expert code reviewer. Focus on code quality, security, performance, and best practices. Provide specific, actionable feedback.
+          </code>
+        </div>
+
+        <h3>Creative Writing Partner</h3>
+        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
+          <code style="color: #4fc3f7;">
+            You are a creative writing assistant. Help brainstorm ideas, improve prose, and provide constructive feedback on writing style and structure.
+          </code>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="examples">💡 Example Prompts</h2>
+        
+        <h3>Code Generation</h3>
+        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
+          <p style="color: #fbbf24; font-weight: bold;">Prompt:</p>
+          <p style="color: #e5e7eb;">Create a Python function that validates email addresses. Include error handling, type hints, and docstrings. Test it with both valid and invalid examples.</p>
+        </div>
+
+        <h3>Data Analysis</h3>
+        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
+          <p style="color: #fbbf24; font-weight: bold;">Prompt:</p>
+          <p style="color: #e5e7eb;">Analyze this sales data and identify the top 3 trends. Present your findings in a clear format with actionable recommendations: [paste data]</p>
+        </div>
+
+        <h3>Learning Assistant</h3>
+        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
+          <p style="color: #fbbf24; font-weight: bold;">Prompt:</p>
+          <p style="color: #e5e7eb;">Explain quantum computing to me like I'm a computer science student. Use analogies, provide examples, and suggest resources for deeper learning.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="troubleshooting">🔧 Troubleshooting Common Issues</h2>
+        
+        <h3>Getting Inconsistent Results</h3>
+        <ul>
+          <li>Make your prompts more specific</li>
+          <li>Use session prompts for consistent behavior</li>
+          <li>Provide more context and examples</li>
+        </ul>
+
+        <h3>Responses Too Long/Short</h3>
+        <ul>
+          <li>Specify desired length explicitly</li>
+          <li>Use phrases like "briefly explain" or "provide a detailed analysis"</li>
+          <li>Give examples of the desired length</li>
+        </ul>
+
+        <h3>AI Not Following Instructions</h3>
+        <ul>
+          <li>Break complex requests into smaller steps</li>
+          <li>Use numbered lists for multi-part instructions</li>
+          <li>Emphasize critical requirements</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ReactorAI. All rights reserved.</p>
+  </footer>
+</body>
+</html>

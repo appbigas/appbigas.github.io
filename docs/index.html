@@ -1,35 +1,34 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ReactorAI – Ollama Client App</title>
+  <title>ReactorAI – Ollama & Gemini Client App</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="canonical" href="https://appbigas.com" />
 
   <!-- ✅ SEO Meta -->
-  <meta name="description" content="ReactorAI is a sleek app for connecting to Ollama's local or remote AI models. Available on macOS, iOS, and Windows." />
-  <meta name="keywords" content="ReactorAI, Ollama, ollama client, ollama desktop client, ollama desktop, ollama windows, ollama ios, ollama mac, macOS AI client, local LLM, AI chat app, open source AI, Ollama documentation, ReactorAI guide" />
+  <meta name="description" content="ReactorAI offers free core AI functionality for connecting to Ollama's local or remote AI models and Google's Gemini. Soon with Model Context Protocol (MCP) support. Available on macOS, iOS, and Windows." />
+  <meta name="keywords" content="ReactorAI, free AI client, free core features, Ollama, Gemini, MCP, Model Context Protocol, ollama client, gemini client, free ollama app, free ai chat, ollama desktop client, ollama desktop, ollama windows, ollama ios, ollama mac, gemini mac, gemini windows, gemini ios, macOS AI client, local LLM, AI chat app, open source AI, Ollama documentation, ReactorAI guide" />
   <meta name="author" content="ReactorAI Team" />
   <meta name="robots" content="index, follow" />
 
   <!-- ✅ Social Meta -->
-  <meta property="og:title" content="ReactorAI – Chat with Ollama Locally" />
-  <meta property="og:description" content="ReactorAI is a native app for Ollama, supporting local and remote model hosting. Explore the full guide here." />
-  <meta property="og:image" content="https://appbigas.com/images/home_screen.png" />
+  <meta property="og:title" content="ReactorAI – Free Core Features for Ollama & Gemini" />
+  <meta property="og:description" content="ReactorAI offers free core AI functionality for Ollama and Gemini, supporting local and remote model hosting. Essential features always free." />
+  <meta property="og:image" content="https://reactorai.s3.amazonaws.com/logo.png" />
   <meta property="og:url" content="https://appbigas.com" />
   <meta property="og:type" content="website" />
 
   <!-- ✅ Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ReactorAI – Ollama macOS, iOS, Windows Client" />
-  <meta name="twitter:description" content="Documentation for ReactorAI, a cross-platform client for Ollama AI model server." />
-  <meta name="twitter:image" content="https://appbigas.com/images/home_screen.png" />
+  <meta name="twitter:title" content="ReactorAI – Free Ollama & Gemini Client for macOS, iOS, Windows" />
+  <meta name="twitter:description" content="Documentation for ReactorAI: free core features for Ollama and Gemini AI models across all platforms." />
+  <meta name="twitter:image" content="https://reactorai.s3.amazonaws.com/logo.png" />
 
   <!-- ✅ Apple Smart Banner -->
   <meta name="apple-itunes-app" content="app-id=6739567267" />
-  <meta property="og:image" content="https://reactorai.s3.amazonaws.com/logo.png" />
-<meta name="twitter:image" content="https://reactorai.s3.amazonaws.com/logo.png" />
 
 
   <!-- ✅ Google Analytics -->
@@ -40,6 +39,65 @@
     gtag('js', new Date());
     gtag('config', 'G-9H9MF1VFSR');
   </script>
+
+  <!-- ✅ Structured Data - Software Application -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "ReactorAI",
+    "description": "Free AI client app for connecting to Ollama's local or remote AI models and Google's Gemini. Cross-platform support for macOS, iOS, and Windows.",
+    "url": "https://appbigas.com",
+    "applicationCategory": "AI Assistant",
+    "operatingSystem": ["macOS", "iOS", "Windows"],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Core features are completely free"
+    },
+    "downloadUrl": [
+      "https://apps.apple.com/eg/app/reactorai/id6739567267",
+      "https://apps.microsoft.com/store/detail/9NLWPTD23PG0"
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "ReactorAI Team"
+    },
+    "screenshot": "https://reactorai.s3.us-east-2.amazonaws.com/home_screen.png",
+    "featureList": [
+      "AI Chat Interface",
+      "Ollama Model Support",
+      "Google Gemini Integration",
+      "Session Management",
+      "Image Analysis",
+      "Code Generation",
+      "Multilingual Support",
+      "Privacy-Focused"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "150"
+    }
+  }
+  </script>
+
+  <!-- ✅ Structured Data - Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ReactorAI",
+    "url": "https://appbigas.com",
+    "logo": "https://reactorai.s3.amazonaws.com/logo.png",
+    "description": "Developer of ReactorAI, a free cross-platform AI client application",
+    "sameAs": [
+      "https://apps.apple.com/eg/app/reactorai/id6739567267",
+      "https://apps.microsoft.com/store/detail/9NLWPTD23PG0"
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -47,7 +105,7 @@
       <img src="https://reactorai.s3.amazonaws.com/logo.png" alt="ReactorAI Logo" style="height: 50px;" />
       <h1 style="margin: 0;">ReactorAI</h1>
     </div>
-    <p>Chat with Ollama AI models on macOS, iOS, and Windows</p>
+    <p>Chat with Ollama and Gemini AI models on macOS, iOS, and Windows</p>
 
     <!-- Store Badges -->
     <div class="store-links">
@@ -73,27 +131,75 @@
   <!-- Simple Top Navigation -->
   <nav class="topnav">
     <a href="installation.html">Installation</a>
-    <a href="documentation.html">Documentation</a>
+    <a href="documentation.html">Documentation <span style="background: #ff4444; color: white; font-size: 0.7em; padding: 2px 6px; border-radius: 10px; margin-left: 4px;">NEW</span></a>
+    <a href="prompting-guide.html">Prompting Guide</a>
     <a href="faq.html">FAQ</a>
   </nav>
 
   <main>
+    <!-- 🎉 NEW UPDATE HIGHLIGHT -->
+    <section style="background: linear-gradient(135deg, #00bcd4, #4fc3f7); padding: 30px; border-radius: 12px; margin-bottom: 30px; text-align: center; box-shadow: 0 4px 20px rgba(0, 188, 212, 0.3);">
+      <h2 style="color: #fff; font-size: 1.8em; margin: 0 0 15px 0; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">🚀 NEW UPDATE: Gemini Models Support!</h2>
+      <p style="color: #fff; font-size: 1.2em; margin: 0; font-weight: 500;">ReactorAI now supports Google's powerful Gemini models alongside Ollama! Switch between local Ollama models and cloud-based Gemini for the best of both worlds.</p>
+      <div style="margin-top: 20px;">
+        <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: #fff; font-weight: bold; margin: 0 8px;">✨ Gemini Pro</span>
+        <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: #fff; font-weight: bold; margin: 0 8px;">🔥 Gemini Flash</span>
+        <span style="background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: #fff; font-weight: bold; margin: 0 8px;">🎯 Easy Setup</span>
+      </div>
+    </section>
+
     <section>
       <h2>Welcome to ReactorAI</h2>
-      <p>ReactorAI is a beautifully designed, cross-platform client app that lets you interact with Ollama's local or remote AI models seamlessly.</p>
+      <p>ReactorAI is a beautifully designed, cross-platform client app that lets you interact with Ollama's local or remote AI models and Google's Gemini models seamlessly.</p>
       <p>It's simple, privacy-respecting, and available on all major platforms.</p>
-      <p><strong>Exciting News!</strong> The next release will include support for Gemini models!</p>
+    </section>
+
+    <!-- 💎 WHY REACTORAI SECTION -->
+    <section style="background: linear-gradient(135deg, #059669, #10b981); padding: 30px; border-radius: 12px; margin: 30px 0; text-align: center; box-shadow: 0 4px 20px rgba(5, 150, 105, 0.3);">
+      <h2 style="color: #fff; font-size: 1.8em; margin: 0 0 20px 0; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">💎 Why Choose ReactorAI?</h2>
+      
+      <!-- Free Badge -->
+      <div style="background: rgba(255,255,255,0.9); color: #059669; padding: 12px 24px; border-radius: 25px; display: inline-block; margin-bottom: 25px; font-weight: bold; font-size: 1.1em; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        🎉 <strong>Core Features FREE</strong> - All essential AI functionality at no cost!
+      </div>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+          <h3 style="color: #fff; margin-top: 0; font-size: 1.2em;">🌐 Universal Access</h3>
+          <p style="color: #d1fae5; margin: 0;">Works with both local Ollama models and cloud Gemini - your choice!</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+          <h3 style="color: #fff; margin-top: 0; font-size: 1.2em;">🔒 Privacy First</h3>
+          <p style="color: #d1fae5; margin: 0;">Your data stays on your device with local models, or use cloud when you need it</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+          <h3 style="color: #fff; margin-top: 0; font-size: 1.2em;">⚡ No Setup Hassles</h3>
+          <p style="color: #d1fae5; margin: 0;">Beautiful interface, instant setup - just download and start chatting!</p>
+        </div>
+      </div>
     </section>
 
     <section>
         <h2>Why ReactorAI?</h2>
         <ul>
+            <li><strong>🎉 Core Features Free:</strong> All essential AI functionality is completely free - chat, models, sessions, and more!</li>
             <li><strong>Cross-Platform:</strong> Available on macOS, iOS, and Windows.</li>
             <li><strong>Privacy-Focused:</strong> Your data stays local unless you use a remote server.</li>
             <li><strong>Easy to Use:</strong> A simple and intuitive interface for interacting with AI models.</li>
             <li><strong>Feature-Rich:</strong> Supports image analysis, code generation, and more.</li>
             <li><strong>Multilingual:</strong> Supports both English and Arabic interfaces.</li>
         </ul>
+    </section>
+
+    <!-- 🚀 COMING SOON SECTION -->
+    <section style="background: linear-gradient(135deg, #8b5cf6, #a855f7); padding: 25px; border-radius: 12px; margin: 30px 0; text-align: center; box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);">
+      <h2 style="color: #fff; font-size: 1.6em; margin: 0 0 15px 0; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">🚀 Coming Soon: Model Context Protocol (MCP)</h2>
+      <p style="color: #fff; font-size: 1.1em; margin: 0 0 15px 0; font-weight: 500;">ReactorAI will soon support the Model Context Protocol, enabling your AI models to interact with external tools and data sources!</p>
+      <div style="margin-top: 20px;">
+        <span style="background: rgba(255,255,255,0.25); padding: 6px 12px; border-radius: 15px; color: #fff; font-weight: bold; margin: 0 6px; font-size: 0.9em;">📁 File System MCP</span>
+        <span style="background: rgba(255,255,255,0.25); padding: 6px 12px; border-radius: 15px; color: #fff; font-weight: bold; margin: 0 6px; font-size: 0.9em;">🔧 Custom MCP Servers</span>
+        <span style="background: rgba(255,255,255,0.25); padding: 6px 12px; border-radius: 15px; color: #fff; font-weight: bold; margin: 0 6px; font-size: 0.9em;">🧪 Beta Testing</span>
+      </div>
     </section>
   </main>
 

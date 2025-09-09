@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -8,14 +9,14 @@
   <link rel="canonical" href="https://appbigas.com/installation.html" />
 
   <!-- ✅ SEO Meta -->
-  <meta name="description" content="How to install ReactorAI and connect it to Ollama on macOS, iOS, and Windows. Follow our simple setup instructions." />
-  <meta name="keywords" content="ReactorAI installation, Ollama setup, macOS Ollama client, Windows Ollama client, iOS AI app, how to install Ollama" />
+  <meta name="description" content="How to install ReactorAI and connect it to Ollama or Gemini on macOS, iOS, and Windows. Follow our simple setup instructions." />
+  <meta name="keywords" content="ReactorAI installation, Ollama setup, Gemini setup, macOS Ollama client, Windows Ollama client, iOS AI app, how to install Ollama, Gemini API key" />
   <meta name="author" content="ReactorAI Team" />
   <meta name="robots" content="index, follow" />
 
   <!-- ✅ Social Meta -->
-  <meta property="og:title" content="ReactorAI Installation – Connect to Ollama Easily" />
-  <meta property="og:description" content="Step-by-step guide to install ReactorAI and set it up with Ollama on your platform." />
+  <meta property="og:title" content="ReactorAI Installation – Connect to Ollama & Gemini Easily" />
+  <meta property="og:description" content="Step-by-step guide to install ReactorAI and set it up with Ollama or Gemini on your platform." />
   <meta property="og:image" content="https://appbigas.com/images/home_screen.png" />
   <meta property="og:url" content="https://appbigas.com/installation.html" />
   <meta property="og:type" content="website" />
@@ -23,7 +24,7 @@
   <!-- ✅ Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="ReactorAI – Installation Guide" />
-  <meta name="twitter:description" content="Install ReactorAI and connect it to your Ollama server on macOS, iOS, or Windows." />
+  <meta name="twitter:description" content="Install ReactorAI and connect it to your Ollama server or Gemini on macOS, iOS, or Windows." />
   <meta name="twitter:image" content="https://appbigas.com/images/home_screen.png" />
 
   <!-- ✅ Google Analytics -->
@@ -34,24 +35,79 @@
     gtag('js', new Date());
     gtag('config', 'G-9H9MF1VFSR');
   </script>
+
+  <!-- ✅ Structured Data - HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Install ReactorAI",
+    "description": "Step-by-step guide to install ReactorAI and set it up with Ollama or Gemini on macOS, iOS, and Windows.",
+    "url": "https://appbigas.com/installation.html",
+    "image": "https://reactorai.s3.amazonaws.com/logo.png",
+    "author": {
+      "@type": "Organization",
+      "name": "ReactorAI Team"
+    },
+    "datePublished": "2025-01-09",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Install Ollama Server (Optional)",
+        "text": "Visit ollama.com to download and install the Ollama server for local AI models."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Download Ollama Models",
+        "text": "Use command line to download models: 'ollama pull llama3.2' for general use, 'ollama pull codellama' for coding, or 'ollama pull phi3' for lightweight tasks."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Setup Gemini API (Alternative)",
+        "text": "Visit Google AI Studio to create an API key for Gemini models."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Install ReactorAI",
+        "text": "Download ReactorAI from the Mac App Store, iOS App Store, or Microsoft Store."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Configure Connection",
+        "text": "Launch the app and configure your Ollama server address or Gemini API key in settings."
+      }
+    ],
+    "supply": [
+      {
+        "@type": "HowToSupply",
+        "name": "Computer with macOS, iOS, or Windows"
+      },
+      {
+        "@type": "HowToSupply",
+        "name": "Internet connection"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
     <h1>ReactorAI Installation</h1>
-    <p>Setup ReactorAI and connect to your Ollama models on any platform</p>
+    <p>Setup ReactorAI and connect to your Ollama models or Gemini on any platform</p>
   </header>
 
   <nav class="topnav">
     <a href="index.html">Home</a>
     <a href="installation.html">Installation</a>
-    <a href="documentation.html">Documentation</a>
+    <a href="documentation.html">Documentation <span style="background: #ff4444; color: white; font-size: 0.7em; padding: 2px 6px; border-radius: 10px; margin-left: 4px;">NEW</span></a>
+    <a href="prompting-guide.html">Prompting Guide</a>
     <a href="faq.html">FAQ</a>
   </nav>
 
   <main>
     <section>
-      <h2>1. Install Ollama Server</h2>
-      <p>ReactorAI relies on the Ollama server to run AI models. You can install it locally or use a remote server.</p>
+      <h2>1. Install Ollama Server (Optional)</h2>
+      <p>If you want to use Ollama models, ReactorAI relies on the Ollama server to run AI models. You can install it locally or use a remote server.</p>
       <ul>
         <li>Visit <a href="https://ollama.com" target="_blank">ollama.com</a> to download the server</li>
         <li>Follow platform-specific setup instructions</li>
@@ -60,11 +116,93 @@
     </section>
 
     <section>
+      <h2 id="ollama-setup">1a. How to Install Ollama and Download Models</h2>
+      <div style="background: #2a2a2a; padding: 20px; border-radius: 8px; margin: 15px 0;">
+        <h3 style="color: #00bcd4; margin-top: 0;">📥 Installing Ollama</h3>
+        
+        <h4 style="color: #4fc3f7;">🖥️ macOS & Linux:</h4>
+        <div style="background: #1a1a1a; padding: 15px; border-radius: 6px; margin: 10px 0;">
+          <code style="color: #e5e7eb; font-family: 'Courier New', monospace;">
+            curl -fsSL https://ollama.com/install.sh | sh
+          </code>
+        </div>
+        
+        <h4 style="color: #4fc3f7;">🪟 Windows:</h4>
+        <p style="color: #e5e7eb;">Download the installer from <a href="https://ollama.com/download/windows" target="_blank" style="color: #00bcd4;">ollama.com/download/windows</a> and run it.</p>
+        
+        <h3 style="color: #00bcd4; margin-top: 25px;">🤖 Downloading Popular Models</h3>
+        
+        <h4 style="color: #4fc3f7;">Essential Models for ReactorAI:</h4>
+        <div style="background: #1a1a1a; padding: 15px; border-radius: 6px; margin: 10px 0;">
+          <code style="color: #e5e7eb; font-family: 'Courier New', monospace; display: block; margin-bottom: 8px;">
+            # 🦙 General purpose model (recommended for beginners)<br/>
+            ollama pull llama3.2<br/><br/>
+            
+            # 💻 Best for coding tasks<br/>
+            ollama pull codellama<br/><br/>
+            
+            # ⚡ Fast, lightweight model<br/>
+            ollama pull phi3<br/><br/>
+            
+            # 🌍 Great for multilingual tasks<br/>
+            ollama pull mistral<br/><br/>
+            
+            # 🧠 Advanced reasoning (larger model)<br/>
+            ollama pull llama3.1:70b
+          </code>
+        </div>
+        
+        <h3 style="color: #00bcd4; margin-top: 25px;">🔧 Essential Commands</h3>
+        
+        <div style="background: #1a1a1a; padding: 15px; border-radius: 6px; margin: 10px 0;">
+          <code style="color: #e5e7eb; font-family: 'Courier New', monospace; display: block; margin-bottom: 8px;">
+            # 📋 List installed models<br/>
+            ollama list<br/><br/>
+            
+            # 🚀 Start ollama service<br/>
+            ollama serve<br/><br/>
+            
+            # 💬 Test a model interactively<br/>
+            ollama run llama3.2<br/><br/>
+            
+            # 🗑️ Remove a model<br/>
+            ollama rm modelname<br/><br/>
+            
+            # 📥 Pull specific model version<br/>
+            ollama pull llama3.2:3b
+          </code>
+        </div>
+        
+        <h3 style="color: #00bcd4; margin-top: 25px;">💡 Tips for ReactorAI Users</h3>
+        <ul style="color: #e5e7eb; line-height: 1.6;">
+          <li><strong>Start Small:</strong> Begin with <code>llama3.2</code> or <code>phi3</code> - they're fast and work great</li>
+          <li><strong>Check System Resources:</strong> Larger models (70b+) need 32GB+ RAM</li>
+          <li><strong>Keep Ollama Running:</strong> ReactorAI connects to the ollama service on <code>http://localhost:11434</code></li>
+          <li><strong>Model Switching:</strong> Download multiple models and switch between them in ReactorAI</li>
+        </ul>
+        
+        <div style="background: rgba(0, 188, 212, 0.1); padding: 15px; border-radius: 8px; border-left: 4px solid #00bcd4; margin-top: 20px;">
+          <p style="color: #00bcd4; font-weight: bold; margin: 0;">🚀 Pro Tip: After installing models, restart ReactorAI to see them in the model selector!</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>1b. Setup Gemini API (Alternative)</h2>
+      <p>If you prefer to use Google's Gemini models instead of or alongside Ollama:</p>
+      <ul>
+        <li>Visit <a href="https://ai.google.dev/" target="_blank">Google AI Studio</a></li>
+        <li>Create an API key for Gemini</li>
+        <li>Keep the API key ready for app configuration</li>
+      </ul>
+    </section>
+
+    <section>
       <h2>2. Install ReactorAI on macOS</h2>
       <ul>
         <li>Go to the <a href="https://apps.apple.com/eg/app/reactorai/id6739567267" target="_blank">Mac App Store</a></li>
         <li>Click “Get” to install</li>
-        <li>Launch the app and configure the Ollama server address</li>
+        <li>Launch the app and configure the Ollama server address or Gemini API key</li>
       </ul>
     </section>
 
@@ -73,7 +211,7 @@
       <ul>
         <li>Open the App Store on your iPhone or iPad</li>
         <li>Search for "ReactorAI" and install the app</li>
-        <li>Open the app and set your Ollama server (local or remote)</li>
+        <li>Open the app and set your Ollama server (local or remote) or Gemini API key</li>
       </ul>
     </section>
 
@@ -82,7 +220,7 @@
       <ul>
         <li>Go to the <a href="https://apps.microsoft.com/store/detail/9NLWPTD23PG0" target="_blank">Microsoft Store</a></li>
         <li>Click “Install” to get ReactorAI</li>
-        <li>Open the app and provide the Ollama model server URL</li>
+        <li>Open the app and provide the Ollama model server URL or Gemini API key</li>
       </ul>
     </section>
   </main>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -8,14 +9,14 @@
   <link rel="canonical" href="https://appbigas.com/documentation.html" />
 
   <!-- ✅ SEO Meta -->
-  <meta name="description" content="Complete documentation for ReactorAI: features, usage, screenshots, and tips for using Ollama models locally or remotely." />
-  <meta name="keywords" content="ReactorAI documentation, Ollama app help, ReactorAI guide, Ollama client usage, macOS AI app, Windows AI app, iOS chat AI" />
+  <meta name="description" content="Complete documentation for ReactorAI: features, usage, screenshots, and tips for using Ollama and Gemini models locally or remotely. Coming soon: Model Context Protocol (MCP) support." />
+  <meta name="keywords" content="ReactorAI documentation, Ollama app help, Gemini app help, MCP support, Model Context Protocol, ReactorAI guide, Ollama client usage, Gemini client usage, macOS AI app, Windows AI app, iOS chat AI" />
   <meta name="author" content="ReactorAI Team" />
   <meta name="robots" content="index, follow" />
 
   <!-- ✅ Social Meta -->
-  <meta property="og:title" content="ReactorAI Documentation – Guide for Ollama Users" />
-  <meta property="og:description" content="Browse the full guide to use ReactorAI with Ollama on macOS, iOS, and Windows. Features, screenshots, and how-tos included." />
+  <meta property="og:title" content="ReactorAI Documentation – Guide for Ollama & Gemini Users" />
+  <meta property="og:description" content="Browse the full guide to use ReactorAI with Ollama and Gemini on macOS, iOS, and Windows. Features, screenshots, and how-tos included." />
   <meta property="og:image" content="https://appbigas.com/images/home_screen.png" />
   <meta property="og:url" content="https://appbigas.com/documentation.html" />
   <meta property="og:type" content="website" />
@@ -23,7 +24,7 @@
   <!-- ✅ Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="ReactorAI – Full Documentation" />
-  <meta name="twitter:description" content="ReactorAI full user guide to connect and chat with Ollama AI models on all platforms." />
+  <meta name="twitter:description" content="ReactorAI full user guide to connect and chat with Ollama and Gemini AI models on all platforms." />
   <meta name="twitter:image" content="https://appbigas.com/images/home_screen.png" />
   <meta property="og:image" content="https://reactorai.s3.amazonaws.com/logo.png" />
 <meta name="twitter:image" content="https://reactorai.s3.amazonaws.com/logo.png" />
@@ -34,6 +35,49 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-9H9MF1VFSR');
+  </script>
+
+  <!-- ✅ Structured Data - TechArticle -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "ReactorAI Documentation - Complete User Guide",
+    "description": "Complete documentation for ReactorAI: features, usage, screenshots, and tips for using Ollama and Gemini models locally or remotely.",
+    "url": "https://appbigas.com/documentation.html",
+    "datePublished": "2025-01-09",
+    "dateModified": "2025-01-09",
+    "author": {
+      "@type": "Organization",
+      "name": "ReactorAI Team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ReactorAI",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://reactorai.s3.amazonaws.com/logo.png"
+      }
+    },
+    "mainEntity": {
+      "@type": "SoftwareApplication",
+      "name": "ReactorAI"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "AI Chat Applications"
+      },
+      {
+        "@type": "Thing",
+        "name": "Ollama Client"
+      },
+      {
+        "@type": "Thing",
+        "name": "Google Gemini"
+      }
+    ]
+  }
   </script>
   <style>
     .screenshot img {
@@ -89,26 +133,74 @@
   <nav class="topnav">
     <a href="index.html">Home</a>
     <a href="installation.html">Installation</a>
-    <a href="documentation.html">Documentation</a>
+    <a href="documentation.html">Documentation <span style="background: #ff4444; color: white; font-size: 0.7em; padding: 2px 6px; border-radius: 10px; margin-left: 4px;">NEW</span></a>
+    <a href="prompting-guide.html">Prompting Guide</a>
     <a href="faq.html">FAQ</a>
   </nav>
 
   <div class="container">
     <aside>
       <h2>Sections</h2>
+      <a href="#whats-new">🎆 What's New</a>
+      <a href="#coming-soon">🚀 Coming Soon</a>
       <a href="#features">🔧 Features</a>
       <a href="#core-functionality">✨ Core Functionality</a>
+      <a href="#prompting-tips">💡 Prompting Tips</a>
       <a href="#screens">📱 Screens</a>
       <a href="#screenshots">🖼 Screenshots</a>
       <a href="#getting-started">🚀 Getting Started</a>
     </aside>
 
     <main>
+      <!-- 🎉 WHAT'S NEW SECTION -->
+      <section>
+        <h2 id="whats-new" style="color: #00bcd4; border-bottom: 3px solid #00bcd4;">🎆 What's New in ReactorAI</h2>
+        <div style="background: linear-gradient(135deg, #1e3a8a, #3b82f6); padding: 25px; border-radius: 12px; margin: 20px 0; border-left: 5px solid #00bcd4;">
+          <h3 style="color: #fff; margin-top: 0;">🚀 Gemini Models Support - Latest Update!</h3>
+          <ul style="color: #e5e7eb; line-height: 1.8;">
+            <li><strong>🤖 Google Gemini Integration:</strong> Access powerful Gemini Pro and Gemini Flash models</li>
+            <li><strong>☁️ Cloud-Based AI:</strong> No local setup required - just add your API key</li>
+            <li><strong>🔄 Seamless Switching:</strong> Toggle between Ollama (local) and Gemini (cloud) models</li>
+            <li><strong>🔑 Easy Configuration:</strong> Simple API key setup in settings</li>
+            <li><strong>📊 Enhanced Performance:</strong> Choose the best model for your specific needs</li>
+          </ul>
+          <p style="color: #fbbf24; font-weight: bold; margin-bottom: 0;">✨ Update now to experience the power of Google's latest AI models!</p>
+        </div>
+      </section>
+
+      <!-- 🚀 COMING SOON SECTION -->
+      <section>
+        <h2 id="coming-soon" style="color: #8b5cf6; border-bottom: 3px solid #8b5cf6;">🚀 Coming Soon: Model Context Protocol (MCP)</h2>
+        <div style="background: linear-gradient(135deg, #4c1d95, #7c3aed); padding: 25px; border-radius: 12px; margin: 20px 0; border-left: 5px solid #8b5cf6;">
+          <h3 style="color: #fff; margin-top: 0;">🤖 Model Context Protocol Integration - Next Major Update!</h3>
+          <p style="color: #e5e7eb; font-size: 1.1em; margin-bottom: 20px;">ReactorAI will soon support MCP, allowing AI models to interact with external tools, databases, and systems in real-time.</p>
+          
+          <h4 style="color: #a78bfa; margin-bottom: 10px;">📁 File System MCP (First Release):</h4>
+          <ul style="color: #e5e7eb; line-height: 1.8; margin-bottom: 20px;">
+            <li><strong>Local File Access:</strong> Let AI models read, write, and manage files on your system</li>
+            <li><strong>Directory Navigation:</strong> AI can browse folder structures and understand project layouts</li>
+            <li><strong>Code Analysis:</strong> Models can analyze entire codebases and provide contextual assistance</li>
+            <li><strong>Document Processing:</strong> Automatic reading and processing of text files, PDFs, and more</li>
+          </ul>
+          
+          <h4 style="color: #a78bfa; margin-bottom: 10px;">🔧 Custom MCP Servers (Beta):</h4>
+          <ul style="color: #e5e7eb; line-height: 1.8; margin-bottom: 15px;">
+            <li><strong>Connect Your Own MCP Servers:</strong> Add custom MCP implementations</li>
+            <li><strong>Database Integration:</strong> Connect AI to SQL databases, APIs, and web services</li>
+            <li><strong>Tool Ecosystem:</strong> Extend AI capabilities with specialized tools and services</li>
+            <li><strong>Developer Friendly:</strong> Easy configuration and management of MCP connections</li>
+          </ul>
+          
+          <div style="background: rgba(251, 191, 36, 0.2); padding: 15px; border-radius: 8px; border-left: 4px solid #fbbf24;">
+            <p style="color: #fbbf24; font-weight: bold; margin: 0;">⚠️ Beta Feature: Custom MCP servers will be available in beta for early testing and feedback.</p>
+          </div>
+        </div>
+      </section>
       <section>
         <h2 id="features">All Features</h2>
         <ul>
-          <li><strong>Local & Remote Connectivity:</strong> Connect to AI models hosted locally or on a remote server.</li>
-          <li><strong>Model Selection:</strong> Choose from multiple Ollama models using a dropdown menu.</li>
+          <li><strong>Local & Remote Connectivity:</strong> Connect to AI models hosted locally (Ollama) or remotely (Ollama/Gemini).</li>
+          <li><strong>Model Selection:</strong> Choose from multiple Ollama models or Gemini models using a dropdown menu.</li>
           <li><strong>Session Management:</strong> View, rename, search, and manage your chat history.</li>
           <li><strong>Session Prompts:</strong> Customize system messages to guide the model’s behavior.</li>
           <li><strong>Backup & Restore:</strong> Export and import chats for safekeeping.</li>
@@ -124,6 +216,29 @@
             <li><strong>AI-Powered Image Description/Captioning:</strong> Generate descriptions and captions for images using AI.</li>
              <li><strong>Code Generation/Display:</strong> Generate and display code snippets within the chat.</li>
           </ul>
+      </section>
+
+      <section>
+        <h2 id="prompting-tips">💡 Effective Prompting Tips</h2>
+        <p>Getting the best results from AI models requires effective prompting. Here are quick tips to improve your interactions:</p>
+        
+        <div style="background: #2a2a2a; padding: 20px; border-radius: 8px; margin: 15px 0;">
+          <h3 style="color: #00bcd4; margin-top: 0;">Quick Tips:</h3>
+          <ul style="color: #e5e7eb; line-height: 1.6;">
+            <li><strong>Be Specific:</strong> "Write a Python function to sort a list" is better than "help with Python"</li>
+            <li><strong>Set Context:</strong> Explain what you're working on and your experience level</li>
+            <li><strong>Use Session Prompts:</strong> Set consistent behavior with ReactorAI's session prompt feature</li>
+            <li><strong>Iterate:</strong> Refine your prompts based on the responses you get</li>
+          </ul>
+        </div>
+        
+        <div style="background: linear-gradient(135deg, #065f46, #059669); padding: 20px; border-radius: 12px; margin: 20px 0; text-align: center;">
+          <h3 style="color: #fff; margin-top: 0;">📚 Want to Master AI Prompting?</h3>
+          <p style="color: #d1fae5; margin: 10px 0;">Check out our comprehensive prompting guide with advanced techniques, model-specific tips, and real examples!</p>
+          <a href="prompting-guide.html" style="display: inline-block; background: #fff; color: #059669; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px;">
+            🚀 Read Full Prompting Guide
+          </a>
+        </div>
       </section>
 
       <section>
@@ -196,12 +311,20 @@
         <h2 id="getting-started">Using the App</h2>
         <ol>
           <li>Install and launch the app on your platform</li>
-          <li>In settings, enter your local or remote Ollama URL</li>
+          <li>In settings, enter your local or remote Ollama URL, or configure Gemini API access</li>
           <li>Select a model and start a new chat session</li>
           <li>Use the session prompt input to customize behavior</li>
           <li>Manage chats via the sidebar: search, rename, delete</li>
           <li>Utilize image analysis by sending images to the chat</li>
         </ol>
+        
+        <div style="background: linear-gradient(135deg, #065f46, #059669); padding: 20px; border-radius: 12px; margin: 20px 0; text-align: center;">
+          <h3 style="color: #fff; margin-top: 0;">🚀 Need Help with Ollama Setup?</h3>
+          <p style="color: #d1fae5; margin: 10px 0;">Check our detailed guide for installing Ollama and downloading models via command line!</p>
+          <a href="installation.html#ollama-setup" style="display: inline-block; background: #fff; color: #059669; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px;">
+            💻 View Ollama Installation Guide
+          </a>
+        </div>
       </section>
     </main>
   </div>
