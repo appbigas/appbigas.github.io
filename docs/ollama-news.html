@@ -63,6 +63,115 @@
 
   <!-- Page-specific styles -->
   <style>
+    /* Theme variables */
+    :root {
+      --bg-dark: #1e1e1e;
+      --bg-light: #2a2a2a;
+      --text-light: #eaeaea;
+      --accent: #00bcd4;
+      --link-color: #4fc3f7;
+      --link-hover: #81d4fa;
+    }
+
+    [data-theme="light"] {
+      --bg-dark: #ffffff;
+      --bg-light: #f5f5f5;
+      --text-light: #333333;
+      --accent: #00bcd4;
+      --link-color: #0288d1;
+      --link-hover: #0277bd;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Theme toggle button */
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 1.2em;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+      transition: all 0.3s ease;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
+    }
+
+    /* Light theme adjustments */
+    [data-theme="light"] .news-card {
+      background: var(--bg-light);
+      border-color: #ddd;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    [data-theme="light"] .news-card:hover {
+      box-shadow: 0 8px 25px rgba(0, 188, 212, 0.2);
+    }
+
+    [data-theme="light"] .model-card {
+      background: var(--bg-light);
+      border-color: #ddd;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    [data-theme="light"] .model-card:hover {
+      box-shadow: 0 8px 25px rgba(0, 188, 212, 0.2);
+    }
+
+    [data-theme="light"] .filter-btn {
+      background: #e0e0e0;
+      color: #333;
+      border-color: #ccc;
+    }
+
+    [data-theme="light"] .filter-btn:hover,
+    [data-theme="light"] .filter-btn.active {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    [data-theme="light"] .tag {
+      background: #e0e0e0;
+      color: #666;
+    }
+
+    [data-theme="light"] .news-date {
+      color: #666;
+    }
+
+    [data-theme="light"] header {
+      background-color: var(--bg-light);
+      border-bottom-color: #ddd;
+    }
+
+    [data-theme="light"] .topnav {
+      background: var(--bg-light);
+      border-bottom-color: #ddd;
+    }
+
+    [data-theme="light"] footer {
+      background-color: var(--bg-light);
+      border-top-color: #ddd;
+    }
+
     /* Beta badge styling */
     .beta-badge {
       background: linear-gradient(135deg, #00bcd4, #0097a7);
@@ -309,6 +418,11 @@
   </style>
 </head>
 <body>
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+    <span id="themeIcon">🌙</span>
+  </button>
+
   <header>
     <div style="display: flex; align-items: center; justify-content: center; gap: 12px;">
       <img src="https://reactorai.s3.amazonaws.com/logo.png" alt="ReactorAI Logo" style="height: 50px;" />
@@ -580,8 +694,32 @@
     <p>&copy; 2025 ReactorAI. All rights reserved.</p>
   </footer>
 
-  <!-- JavaScript for category filtering -->
+  <!-- JavaScript for category filtering and theme toggle -->
   <script>
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const body = document.body;
+
+    // Check for saved theme preference or default to dark theme
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    body.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = body.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      body.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    });
+
+    function updateThemeIcon(theme) {
+      themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+
+    // Category filtering functionality
     document.addEventListener('DOMContentLoaded', function() {
       const filterBtns = document.querySelectorAll('.filter-btn');
       const newsCards = document.querySelectorAll('.news-card');
