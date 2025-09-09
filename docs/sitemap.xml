@@ -33,6 +33,14 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- Ollama News (Beta) -->
+  <url>
+    <loc>https://appbigas.com/ollama-news.html</loc>
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <!-- FAQ -->
   <url>
     <loc>https://appbigas.com/faq.html</loc>
