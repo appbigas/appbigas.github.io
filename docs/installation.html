@@ -100,9 +100,9 @@
   <nav class="topnav">
     <a href="index.html">Home</a>
     <a href="installation.html">Installation</a>
-    <a href="documentation.html">Documentation <span style="background: #ff4444; color: white; font-size: 0.7em; padding: 2px 6px; border-radius: 10px; margin-left: 4px;">NEW</span></a>
+    <a href="documentation.html">Documentation <span class="badge badge--small">NEW</span></a>
     <a href="prompting-guide.html">Prompting Guide</a>
-    <a href="ollama-news.html">Ollama News <span style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; font-size: 0.7em; padding: 2px 6px; border-radius: 10px; margin-left: 4px; font-weight: bold;">BETA</span></a>
+    <a href="ollama-news.html">Ollama News <span class="badge badge--small">BETA</span></a>
     <a href="faq.html">FAQ</a>
   </nav>
 
@@ -119,64 +119,64 @@
 
     <section>
       <h2 id="ollama-setup">1a. How to Install Ollama and Download Models</h2>
-      <div style="background: #2a2a2a; padding: 20px; border-radius: 8px; margin: 15px 0;">
-        <h3 style="color: #00bcd4; margin-top: 0;">📥 Installing Ollama</h3>
+      <div class="card card--compact card--border-accent">
+        <h3 class="card-subtitle">📥 Installing Ollama</h3>
         
-        <h4 style="color: #4fc3f7;">🖥️ macOS & Linux:</h4>
-        <div style="background: #1a1a1a; padding: 15px; border-radius: 6px; margin: 10px 0;">
-          <code style="color: #e5e7eb; font-family: 'Courier New', monospace;">
-            curl -fsSL https://ollama.com/install.sh | sh
+        <h4 class="card-subtitle">🖥️ macOS &amp; Linux:</h4>
+        <div class="code-block">
+          <code>
+curl -fsSL https://ollama.com/install.sh | sh
           </code>
         </div>
         
-        <h4 style="color: #4fc3f7;">🪟 Windows:</h4>
-        <p style="color: #e5e7eb;">Download the installer from <a href="https://ollama.com/download/windows" target="_blank" style="color: #00bcd4;">ollama.com/download/windows</a> and run it.</p>
+        <h4 class="card-subtitle">🪟 Windows:</h4>
+        <p>Download the installer from <a href="https://ollama.com/download/windows" target="_blank">ollama.com/download/windows</a> and run it.</p>
         
-        <h3 style="color: #00bcd4; margin-top: 25px;">🤖 Downloading Popular Models</h3>
+        <h3 class="card-subtitle" style="margin-top: 25px;">🤖 Downloading Popular Models</h3>
         
-        <h4 style="color: #4fc3f7;">Essential Models for ReactorAI:</h4>
-        <div style="background: #1a1a1a; padding: 15px; border-radius: 6px; margin: 10px 0;">
-          <code style="color: #e5e7eb; font-family: 'Courier New', monospace; display: block; margin-bottom: 8px;">
-            # 🦙 General purpose model (recommended for beginners)<br/>
-            ollama pull llama3.2<br/><br/>
-            
-            # 💻 Best for coding tasks<br/>
-            ollama pull codellama<br/><br/>
-            
-            # ⚡ Fast, lightweight model<br/>
-            ollama pull phi3<br/><br/>
-            
-            # 🌍 Great for multilingual tasks<br/>
-            ollama pull mistral<br/><br/>
-            
-            # 🧠 Advanced reasoning (larger model)<br/>
-            ollama pull llama3.1:70b
+        <h4 class="card-subtitle">Essential Models for ReactorAI:</h4>
+        <div class="code-block">
+          <code>
+# 🦙 General purpose model (recommended for beginners)
+ollama pull llama3.2
+
+# 💻 Best for coding tasks
+ollama pull codellama
+
+# ⚡ Fast, lightweight model
+ollama pull phi3
+
+# 🌍 Great for multilingual tasks
+ollama pull mistral
+
+# 🧠 Advanced reasoning (larger model)
+ollama pull llama3.1:70b
           </code>
         </div>
         
-        <h3 style="color: #00bcd4; margin-top: 25px;">🔧 Essential Commands</h3>
+        <h3 class="card-subtitle" style="margin-top: 25px;">🔧 Essential Commands</h3>
         
-        <div style="background: #1a1a1a; padding: 15px; border-radius: 6px; margin: 10px 0;">
-          <code style="color: #e5e7eb; font-family: 'Courier New', monospace; display: block; margin-bottom: 8px;">
-            # 📋 List installed models<br/>
-            ollama list<br/><br/>
-            
-            # 🚀 Start ollama service<br/>
-            ollama serve<br/><br/>
-            
-            # 💬 Test a model interactively<br/>
-            ollama run llama3.2<br/><br/>
-            
-            # 🗑️ Remove a model<br/>
-            ollama rm modelname<br/><br/>
-            
-            # 📥 Pull specific model version<br/>
-            ollama pull llama3.2:3b
+        <div class="code-block">
+          <code>
+# 📋 List installed models
+ollama list
+
+# 🚀 Start ollama service
+ollama serve
+
+# 💬 Test a model interactively
+ollama run llama3.2
+
+# 🗑️ Remove a model
+ollama rm modelname
+
+# 📥 Pull specific model version
+ollama pull llama3.2:3b
           </code>
         </div>
         
-        <h3 style="color: #00bcd4; margin-top: 25px;">💡 Tips for ReactorAI Users</h3>
-        <ul style="color: #e5e7eb; line-height: 1.6;">
+        <h3 class="card-subtitle" style="margin-top: 25px;">💡 Tips for ReactorAI Users</h3>
+        <ul>
           <li><strong>Start Small:</strong> Begin with <code>llama3.2</code> or <code>phi3</code> - they're fast and work great</li>
           <li><strong>Check System Resources:</strong> Larger models (70b+) need 32GB+ RAM</li>
           <li><strong>Keep Ollama Running:</strong> ReactorAI connects to the ollama service on <code>http://localhost:11434</code></li>

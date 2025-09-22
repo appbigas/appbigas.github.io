@@ -94,9 +94,9 @@
   <nav class="topnav">
     <a href="index.html">Home</a>
     <a href="installation.html">Installation</a>
-    <a href="documentation.html">Documentation <span style="background: #ff4444; color: white; font-size: 0.7em; padding: 2px 6px; border-radius: 10px; margin-left: 4px;">NEW</span></a>
+    <a href="documentation.html">Documentation <span class="badge badge--small">NEW</span></a>
     <a href="prompting-guide.html">Prompting Guide</a>
-    <a href="ollama-news.html">Ollama News <span style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; font-size: 0.7em; padding: 2px 6px; border-radius: 10px; margin-left: 4px; font-weight: bold;">BETA</span></a>
+    <a href="ollama-news.html">Ollama News <span class="badge badge--small">BETA</span></a>
     <a href="faq.html">FAQ</a>
   </nav>
 
@@ -126,9 +126,9 @@
         </ul>
 
         <h3>Prompt Structure</h3>
-        <div style="background: #2a2a2a; padding: 20px; border-radius: 8px; margin: 15px 0;">
-          <code style="color: #4fc3f7;">
-            [Context] + [Task] + [Format] + [Constraints]
+        <div class="card card--compact card--border-accent">
+          <code>
+[Context] + [Task] + [Format] + [Constraints]
           </code>
         </div>
       </section>
@@ -138,20 +138,20 @@
         
         <h3>Chain of Thought Prompting</h3>
         <p>Ask the AI to think step-by-step for complex problems:</p>
-        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
-          <p style="color: #4fc3f7; margin: 0;"><strong>Example:</strong> "Solve this step by step, showing your reasoning at each stage..."</p>
+        <div class="card card--compact card--border-accent">
+          <p class="card-highlight" style="margin: 0;"><strong>Example:</strong> "Solve this step by step, showing your reasoning at each stage..."</p>
         </div>
 
         <h3>Role-Based Prompting</h3>
         <p>Assign a specific role or persona to the AI:</p>
-        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
-          <p style="color: #4fc3f7; margin: 0;"><strong>Example:</strong> "Act as a senior software engineer and review this code..."</p>
+        <div class="card card--compact card--border-accent">
+          <p class="card-highlight" style="margin: 0;"><strong>Example:</strong> "Act as a senior software engineer and review this code..."</p>
         </div>
 
         <h3>Few-Shot Learning</h3>
         <p>Provide examples of the desired input-output format:</p>
-        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
-          <p style="color: #4fc3f7; margin: 0;"><strong>Example:</strong> "Here are 2 examples of good summaries: [examples]. Now summarize this text in the same style..."</p>
+        <div class="card card--compact card--border-accent">
+          <p class="card-highlight" style="margin: 0;"><strong>Example:</strong> "Here are 2 examples of good summaries: [examples]. Now summarize this text in the same style..."</p>
         </div>
       </section>
 
@@ -197,23 +197,23 @@
         <p>Use ReactorAI's session prompt feature to set consistent behavior:</p>
 
         <h3>General Assistant</h3>
-        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
-          <code style="color: #4fc3f7;">
-            You are a helpful, accurate, and concise assistant. Always provide clear explanations and ask for clarification when needed.
+        <div class="card card--compact card--border-accent">
+          <code>
+You are a helpful, accurate, and concise assistant. Always provide clear explanations and ask for clarification when needed.
           </code>
         </div>
 
         <h3>Code Review Assistant</h3>
-        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
-          <code style="color: #4fc3f7;">
-            You are an expert code reviewer. Focus on code quality, security, performance, and best practices. Provide specific, actionable feedback.
+        <div class="card card--compact card--border-accent">
+          <code>
+You are an expert code reviewer. Focus on code quality, security, performance, and best practices. Provide specific, actionable feedback.
           </code>
         </div>
 
         <h3>Creative Writing Partner</h3>
-        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
-          <code style="color: #4fc3f7;">
-            You are a creative writing assistant. Help brainstorm ideas, improve prose, and provide constructive feedback on writing style and structure.
+        <div class="card card--compact card--border-accent">
+          <code>
+You are a creative writing assistant. Help brainstorm ideas, improve prose, and provide constructive feedback on writing style and structure.
           </code>
         </div>
       </section>
@@ -222,21 +222,21 @@
         <h2 id="examples">💡 Example Prompts</h2>
         
         <h3>Code Generation</h3>
-        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
-          <p style="color: #fbbf24; font-weight: bold;">Prompt:</p>
-          <p style="color: #e5e7eb;">Create a Python function that validates email addresses. Include error handling, type hints, and docstrings. Test it with both valid and invalid examples.</p>
+        <div class="card card--compact card--border-accent">
+          <p class="card-highlight" style="font-weight: 700;">Prompt:</p>
+          <p>Create a Python function that validates email addresses. Include error handling, type hints, and docstrings. Test it with both valid and invalid examples.</p>
         </div>
 
         <h3>Data Analysis</h3>
-        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
-          <p style="color: #fbbf24; font-weight: bold;">Prompt:</p>
-          <p style="color: #e5e7eb;">Analyze this sales data and identify the top 3 trends. Present your findings in a clear format with actionable recommendations: [paste data]</p>
+        <div class="card card--compact card--border-accent">
+          <p class="card-highlight" style="font-weight: 700;">Prompt:</p>
+          <p>Analyze this sales data and identify the top 3 trends. Present your findings in a clear format with actionable recommendations: [paste data]</p>
         </div>
 
         <h3>Learning Assistant</h3>
-        <div style="background: #2a2a2a; padding: 15px; border-radius: 8px; margin: 10px 0;">
-          <p style="color: #fbbf24; font-weight: bold;">Prompt:</p>
-          <p style="color: #e5e7eb;">Explain quantum computing to me like I'm a computer science student. Use analogies, provide examples, and suggest resources for deeper learning.</p>
+        <div class="card card--compact card--border-accent">
+          <p class="card-highlight" style="font-weight: 700;">Prompt:</p>
+          <p>Explain quantum computing to me like I'm a computer science student. Use analogies, provide examples, and suggest resources for deeper learning.</p>
         </div>
       </section>
 
