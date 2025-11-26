@@ -1,37 +1,41 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prompting Guide – ReactorAI</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="canonical" href="https://appbigas.com/prompting-guide.html" />
+  <link rel="canonical" href="https://reactoraiapp.com/prompting-guide.html" />
 
   <!-- ✅ SEO Meta -->
-  <meta name="description" content="Master AI prompting techniques with ReactorAI. Learn effective prompting strategies for Ollama and Gemini models, with examples and best practices." />
-  <meta name="keywords" content="ReactorAI prompting guide, AI prompting techniques, Ollama prompts, Gemini prompts, AI chat tips, effective AI prompting, LLM prompting best practices" />
+  <meta name="description"
+    content="Master AI prompting techniques with ReactorAI. Learn effective prompting strategies for Ollama and Gemini models, with examples and best practices." />
+  <meta name="keywords"
+    content="ReactorAI prompting guide, AI prompting techniques, Ollama prompts, Gemini prompts, AI chat tips, effective AI prompting, LLM prompting best practices" />
   <meta name="author" content="ReactorAI Team" />
   <meta name="robots" content="index, follow" />
 
   <!-- ✅ Social Meta -->
   <meta property="og:title" content="ReactorAI Prompting Guide – Master AI Communication" />
-  <meta property="og:description" content="Complete guide to effective AI prompting with ReactorAI, Ollama, and Gemini models." />
-  <meta property="og:image" content="https://appbigas.com/images/home_screen.png" />
-  <meta property="og:url" content="https://appbigas.com/prompting-guide.html" />
+  <meta property="og:description"
+    content="Complete guide to effective AI prompting with ReactorAI, Ollama, and Gemini models." />
+  <meta property="og:image" content="https://reactoraiapp.com/images/home_screen.png" />
+  <meta property="og:url" content="https://reactoraiapp.com/prompting-guide.html" />
   <meta property="og:type" content="website" />
 
   <!-- ✅ Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="ReactorAI – Complete Prompting Guide" />
-  <meta name="twitter:description" content="Learn advanced AI prompting techniques for better results with ReactorAI." />
-  <meta name="twitter:image" content="https://appbigas.com/images/home_screen.png" />
+  <meta name="twitter:description"
+    content="Learn advanced AI prompting techniques for better results with ReactorAI." />
+  <meta name="twitter:image" content="https://reactoraiapp.com/images/home_screen.png" />
 
   <!-- ✅ Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9H9MF1VFSR"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-9H9MF1VFSR');
   </script>
@@ -43,7 +47,7 @@
     "@type": "HowTo",
     "name": "How to Master AI Prompting with ReactorAI",
     "description": "Complete guide to effective AI prompting techniques for Ollama and Gemini models, with examples and best practices.",
-    "url": "https://appbigas.com/prompting-guide.html",
+    "url": "https://reactoraiapp.com/prompting-guide.html",
     "image": "https://reactorai.s3.amazonaws.com/logo.png",
     "author": {
       "@type": "Organization",
@@ -81,6 +85,7 @@
   }
   </script>
 </head>
+
 <body>
   <script src="theme-toggle.js"></script>
   <header>
@@ -88,181 +93,699 @@
       <img src="https://reactorai.s3.amazonaws.com/logo.png" alt="ReactorAI Logo" style="height: 50px;" />
       <h1 style="margin: 0;">ReactorAI Prompting Guide</h1>
     </div>
-    <p>Master the art of AI communication with effective prompting techniques</p>
+    <p style="font-size: 1.2em; margin: 16px 0 8px 0; font-weight: 500;">Master the art of AI communication with
+      effective prompting techniques</p>
+
+    <!-- Store Badges -->
+    <div class="store-links">
+      <a href="https://apps.apple.com/eg/app/reactorai/id6739567267" target="_blank" rel="noopener">
+        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
+          alt="Download on the App Store" />
+      </a>
+      <a href="https://apps.microsoft.com/store/detail/9NLWPTD23PG0?cid=DevShareMCLPCB" target="_blank" rel="noopener">
+        <img src="https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png"
+          alt="Get it from Microsoft" />
+      </a>
+    </div>
+    <div class="store-links">
+      <a href="https://www.buymeacoffee.com/ayman3000" target="_blank" rel="noopener">
+        <img src="https://cdn.ko-fi.com/cdn/kofi5.png?v=3" alt="Buy Me a Coffee"
+          style="height: 36px; margin-top: 12px;" />
+      </a>
+      <p style="margin-top: 8px; font-size: 0.95em; color: #aaa;">
+        Like ReactorAI? Support future updates ❤️
+      </p>
+    </div>
   </header>
 
   <nav class="topnav">
     <a href="index.html">Home</a>
     <a href="installation.html">Installation</a>
     <a href="documentation.html">Documentation <span class="badge badge--small">NEW</span></a>
-    <a href="prompting-guide.html">Prompting Guide</a>
-    <a href="ollama-news.html">Ollama News <span class="badge badge--small">BETA</span></a>
+    <a href="prompting-guide.html" class="active">Prompting Guide</a>
+    <a href="ollama-news.html">Ollama News <span class="badge badge--small badge--warm">BETA</span></a>
     <a href="faq.html">FAQ</a>
   </nav>
 
   <div class="container">
     <aside>
       <h2>Guide Sections</h2>
-      <a href="#basics">📚 Prompting Basics</a>
+      <a href="#basics">🌟 New to AI?</a>
+      <a href="#writers">✍️ For Writers</a>
+      <a href="#pros">💼 For Pros & Students</a>
+      <a href="#devs">💻 For Developers</a>
       <a href="#techniques">🎯 Advanced Techniques</a>
-      <a href="#ollama-tips">🦙 Ollama-Specific Tips</a>
-      <a href="#gemini-tips">💎 Gemini-Specific Tips</a>
-      <a href="#session-prompts">⚙️ Session Prompts</a>
-      <a href="#examples">💡 Example Prompts</a>
       <a href="#troubleshooting">🔧 Troubleshooting</a>
     </aside>
 
     <main>
+      <!-- 🌟 BEGINNER SECTION -->
       <section>
-        <h2 id="basics">📚 Prompting Basics</h2>
-        <p>Effective prompting is the key to getting the best results from AI models. Here are the fundamental principles:</p>
-        
-        <h3>Core Principles</h3>
-        <ul>
-          <li><strong>Be Specific:</strong> Clear, detailed requests yield better results</li>
-          <li><strong>Provide Context:</strong> Give the AI background information</li>
-          <li><strong>Set Expectations:</strong> Define the format and style you want</li>
-          <li><strong>Iterate:</strong> Refine your prompts based on responses</li>
-        </ul>
+        <h2 id="basics">🌟 New to AI? Start Here!</h2>
+        <p>Prompting is just talking to the AI. The golden rule: <strong>Treat it like a smart intern.</strong> Be
+          specific, give context, and say exactly what you want.</p>
 
-        <h3>Prompt Structure</h3>
-        <div class="card card--compact card--border-accent">
-          <code>
-[Context] + [Task] + [Format] + [Constraints]
-          </code>
+        <div class="card card--accent" style="margin-top: 20px;">
+          <h3 class="card-subtitle">See the Difference</h3>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px;">
+            <div
+              style="background: rgba(239, 68, 68, 0.1); padding: 15px; border-radius: 8px; border-left: 3px solid var(--color-error);">
+              <h4 style="margin: 0 0 10px 0; color: var(--color-error);">❌ Vague Prompt</h4>
+              <code style="display: block; margin-bottom: 5px;">"Write something about dogs"</code>
+              <p style="margin: 0; font-size: 0.9em; opacity: 0.8;">Result: Generic, unfocused text you probably can't
+                use.</p>
+            </div>
+
+            <div
+              style="background: rgba(16, 185, 129, 0.1); padding: 15px; border-radius: 8px; border-left: 3px solid var(--color-success);">
+              <h4 style="margin: 0 0 10px 0; color: var(--color-success);">✅ Specific Prompt</h4>
+              <code
+                style="display: block; margin-bottom: 5px;">"Write a 200-word blog post about the benefits of adopting rescue dogs for families with kids."</code>
+              <p style="margin: 0; font-size: 0.9em; opacity: 0.8;">Result: Focused, relevant, and exactly what you
+                needed.</p>
+            </div>
+          </div>
         </div>
       </section>
 
+      <!-- ✍️ WRITERS SECTION -->
       <section>
-        <h2 id="techniques">🎯 Advanced Techniques</h2>
-        
-        <h3>Chain of Thought Prompting</h3>
-        <p>Ask the AI to think step-by-step for complex problems:</p>
+        <h2 id="writers">✍️ For Writers & Content Creators</h2>
+        <p>Use ReactorAI to break writer's block, edit your work, or brainstorm endless ideas.</p>
+
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div class="feature-card">
+            <h3 class="card-subtitle">📝 Brainstorming</h3>
+            <p><strong>Try this:</strong> "Give me 10 creative blog post titles about [topic] that would appeal to
+              [audience]."</p>
+            <p><strong>Or:</strong> "Help me develop a villain for my sci-fi novel who believes they are the hero."</p>
+          </div>
+
+          <div class="feature-card">
+            <h3 class="card-subtitle">✨ Editing & Polish</h3>
+            <p><strong>Try this:</strong> "Rewrite this paragraph to be more [persuasive/casual/professional]: [paste
+              text]"</p>
+            <p><strong>Or:</strong> "Find the weak verbs in this text and suggest stronger alternatives."</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 💼 PROS & STUDENTS SECTION -->
+      <section>
+        <h2 id="pros">💼 For Professionals & Students</h2>
+        <p>Save hours on research, emails, and studying.</p>
+
         <div class="card card--compact card--border-accent">
-          <p class="card-highlight" style="margin: 0;"><strong>Example:</strong> "Solve this step by step, showing your reasoning at each stage..."</p>
+          <h3 class="card-subtitle">📧 The "Perfect Email" Template</h3>
+          <code>"Draft a professional email to [recipient] about [subject]. Key points to include: 1) [point 1], 2) [point 2]. Tone should be [polite/firm/urgent]."</code>
         </div>
 
-        <h3>Role-Based Prompting</h3>
-        <p>Assign a specific role or persona to the AI:</p>
-        <div class="card card--compact card--border-accent">
-          <p class="card-highlight" style="margin: 0;"><strong>Example:</strong> "Act as a senior software engineer and review this code..."</p>
+        <div style="margin-top: 20px;">
+          <h3>📚 Study & Research</h3>
+          <ul>
+            <li><strong>Summarize:</strong> "Summarize this article in 3 bullet points: [link or text]"</li>
+            <li><strong>Explain:</strong> "Explain quantum computing like I'm 12 years old."</li>
+            <li><strong>Quiz Me:</strong> "Create a 5-question multiple choice quiz about the French Revolution."</li>
+          </ul>
+        </div>
+      </section>
+      <!-- 💻 DEVELOPERS SECTION -->
+      <section>
+        <h2 id="devs">💻 For Developers</h2>
+
+        <h3>🚀 DevOps & Infrastructure</h3>
+        <div class="code-block">
+          <h4 style="margin: 0 0 8px 0;">CI/CD Pipeline Design</h4>
+          <code>"Design a GitHub Actions CI/CD pipeline for a Node.js application with the following requirements:
+1. Run tests on every pull request
+2. Build Docker image on main branch commits
+3. Deploy to staging automatically, production manually
+4. Include environment-specific secrets handling
+5. Add status badges and notifications
+
+Provide the complete .github/workflows/ci-cd.yml file with inline comments."</code>
+        </div>
+
+        <div class="code-block" style="margin-top: 16px;">
+          <h4 style="margin: 0 0 8px 0;">Docker Optimization</h4>
+          <code>"Review this Dockerfile and suggest optimizations for:
+- Reducing image size
+- Improving build cache efficiency
+- Security best practices
+- Multi-stage builds
+
+[paste Dockerfile]
+
+Provide the optimized version with explanations for each change."</code>
+        </div>
+
+        <div class="code-block" style="margin-top: 16px;">
+          <h4 style="margin: 0 0 8px 0;">Infrastructure as Code</h4>
+          <code>"Create a Terraform configuration to provision:
+- AWS VPC with public and private subnets across 2 availability zones
+- Application Load Balancer
+- Auto Scaling Group with EC2 instances
+- RDS PostgreSQL database in private subnet
+- Security groups following least privilege
+
+Include variables, outputs, and explanatory comments."</code>
+        </div>
+
+        <h3 style="margin-top: 32px;">🏗️ Software Architecture & Design</h3>
+        <div class="code-block">
+          <h4 style="margin: 0 0 8px 0;">System Design</h4>
+          <code>"Design a scalable real-time chat application architecture. Address:
+1. Message delivery and persistence
+2. User presence/online status
+3. Horizontal scaling strategy
+4. Database choice and schema
+5. WebSocket vs polling trade-offs
+6. Message ordering and reliability
+
+Provide a system diagram description and key technology choices with justifications."</code>
+        </div>
+
+        <div class="code-block" style="margin-top: 16px;">
+          <h4 style="margin: 0 0 8px 0;">API Design</h4>
+          <code>"Design a RESTful API for a blog platform with:
+- User authentication and authorization
+- CRUD operations for posts, comments, and tags
+- Search and filtering capabilities
+- Pagination and sorting
+- Rate limiting considerations
+
+Provide:
+1. Complete OpenAPI/Swagger specification
+2. Example request/response pairs
+3. Error handling strategy
+4. Versioning approach"</code>
+        </div>
+
+        <div class="code-block" style="margin-top: 16px;">
+          <h4 style="margin: 0 0 8px 0;">Database Schema Design</h4>
+          <code>"Design a PostgreSQL database schema for an e-commerce platform including:
+- Users, products, orders, and payments
+- Product variants and inventory tracking
+- Order history and status tracking
+- Optimized for read-heavy workloads
+
+Provide:
+1. Complete SQL CREATE TABLE statements
+2. Indexes for common queries
+3. Foreign key relationships
+4. Explanation of normalization decisions"</code>
+        </div>
+
+        <h3 style="margin-top: 32px;">🔧 Debugging & Troubleshooting</h3>
+        <div class="code-block">
+          <h4 style="margin: 0 0 8px 0;">Performance Analysis</h4>
+          <code>"Analyze this slow-running function and suggest performance optimizations:
+
+[paste code]
+
+Address:
+1. Time complexity analysis
+2. Memory usage issues
+3. Database query inefficiencies (if applicable)
+4. Potential algorithmic improvements
+5. Caching opportunities
+
+Provide refactored code with performance benchmarks estimation."</code>
+        </div>
+
+        <div class="code-block" style="margin-top: 16px;">
+          <h4 style="margin: 0 0 8px 0;">Bug Root Cause Analysis</h4>
+          <code>"I'm experiencing intermittent 'Connection timeout' errors in production. Details:
+- Occurs during high traffic (>1000 req/min)
+- Stack trace: [paste stack trace]
+- Application uses Node.js with PostgreSQL
+- Database CPU usage spikes to 80% when errors occur
+- No errors in development environment
+
+Analyze potential root causes, suggest investigation steps, and recommend fixes with priority order."</code>
+        </div>
+
+        <div class="code-block" style="margin-top: 16px;">
+          <h4 style="margin: 0 0 8px 0;">Memory Leak Detection</h4>
+          <code>"My application's memory usage grows from 200MB to 2GB over 6 hours in production. Help diagnose:
+
+Language: [Python/Java/Node.js]
+Framework: [framework name]
+Observations:
+- Memory increases linearly with requests
+- Garbage collection runs but doesn't reduce heap significantly
+- [paste any profiler output]
+
+Suggest:
+1. Debugging approach and tools
+2. Common patterns to look for
+3. Code review checklist
+4. Monitoring metrics to track"</code>
+        </div>
+
+        <h3 style="margin-top: 32px;">💻 Code Generation & Review</h3>
+        <div class="code-block">
+          <h4 style="margin: 0 0 8px 0;">Production-Ready Code</h4>
+          <code>"Create a Python function to validate email addresses. 
+Requirements:
+1. Use regex for RFC 5322 compliance
+2. Handle exceptions gracefully
+3. Include type hints and comprehensive docstrings
+4. Add input sanitization
+5. Provide unit tests with edge cases (invalid formats, null values, SQL injection attempts)
+6. Include logging for debugging
+
+Make it production-ready with error messages that are user-friendly."</code>
+        </div>
+
+        <div class="code-block" style="margin-top: 16px;">
+          <h4 style="margin: 0 0 8px 0;">Security Code Review</h4>
+          <code>"Review this authentication code for security vulnerabilities:
+
+[paste code]
+
+Check for:
+- SQL injection risks
+- XSS vulnerabilities
+- Password storage issues
+- Session management flaws
+- Input validation gaps
+- CSRF protection
+- Rate limiting
+- Authentication bypass possibilities
+
+Provide specific fixes for each issue found with secure code examples."</code>
+        </div>
+
+        <h3 style="margin-top: 32px;">🦙 Ollama vs 💎 Gemini for Devs</h3>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="card card--compact" style="background: var(--bg-light); border-left: 3px solid #10B981;">
+            <h4 style="margin: 0 0 8px 0; color: #10B981;">🦙 Use Ollama (CodeLlama/Mistral)</h4>
+            <ul style="margin: 0;">
+              <li>Offline coding sessions</li>
+              <li>Sensitive code or proprietary logic</li>
+              <li>Quick code snippets and refactoring</li>
+              <li>Local script generation</li>
+              <li>Privacy-critical applications</li>
+              <li>Fast iteration on small functions</li>
+            </ul>
+          </div>
+
+          <div class="card card--compact" style="background: var(--bg-light); border-left: 3px solid #3EA8FF;">
+            <h4 style="margin: 0 0 8px 0; color: #3EA8FF;">💎 Use Gemini Pro/Flash</h4>
+            <ul style="margin: 0;">
+              <li>Complex system architecture discussions</li>
+              <li>Explaining large codebases (paste entire files)</li>
+              <li>Modern framework best practices</li>
+              <li>Multi-step debugging with context</li>
+              <li>Comprehensive code reviews</li>
+              <li>In-depth performance optimization</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card card--tip" style="margin-top: 16px;">
+          <h3 class="card-title">Pro Tip: Iterative Development</h3>
+          <p>Start with a high-level prompt to get the architecture right, then iterate with specific requests like "add
+            error handling to the database connection" or "optimize the query in line 45". This approach yields better
+            results than asking for everything at once.</p>
+        </div>
+      </section>
+
+      <!-- 🎯 ADVANCED TECHNIQUES -->
+      <section>
+        <h3>Chain of Thought</h3>
+        <p>Force the AI to show its work. Great for math or logic.</p>
+        <div class="card card--compact">
+          <code>"Solve this problem step-by-step. Explain your reasoning for each step before giving the final answer."</code>
+        </div>
+
+        <h3>Role Prompting</h3>
+        <p>Give the AI a persona to get better style.</p>
+        <div class="card card--compact">
+          <code>"Act as a senior marketing manager with 20 years of experience. Critique this marketing plan..."</code>
         </div>
 
         <h3>Few-Shot Learning</h3>
-        <p>Provide examples of the desired input-output format:</p>
-        <div class="card card--compact card--border-accent">
-          <p class="card-highlight" style="margin: 0;"><strong>Example:</strong> "Here are 2 examples of good summaries: [examples]. Now summarize this text in the same style..."</p>
+        <p>Give examples to get the exact format you want.</p>
+        <div class="card card--compact">
+          <code>"Convert these names to email addresses.
+Example 1: John Doe -> j.doe@company.com
+Example 2: Jane Smith -> j.smith@company.com
+Task: Robert Johnson ->"</code>
         </div>
       </section>
 
+      <!-- 🔄 ITERATIVE PROMPTING SECTION -->
       <section>
-        <h2 id="ollama-tips">🦙 Ollama-Specific Tips</h2>
-        
-        <h3>Model Selection</h3>
-        <ul>
-          <li><strong>Llama 3.2:</strong> Great for general conversation and reasoning</li>
-          <li><strong>Code Llama:</strong> Optimized for programming tasks</li>
-          <li><strong>Mistral:</strong> Excellent for multilingual tasks</li>
-          <li><strong>Phi-3:</strong> Fast responses, good for quick tasks</li>
-        </ul>
+        <h2>🔄 Iterative Prompting: The Secret to Great Results</h2>
+        <p>The first response is rarely perfect. <strong>Treat AI conversations as iterative.</strong> Refine, redirect,
+          and build on previous answers.</p>
 
-        <h3>Context Management</h3>
-        <p>Ollama models have context limits. For long conversations:</p>
-        <ul>
-          <li>Summarize previous context when needed</li>
-          <li>Use ReactorAI's context selection feature</li>
-          <li>Start new sessions for different topics</li>
-        </ul>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div class="feature-card">
+            <h3 class="card-subtitle">🎯 Refine the Output</h3>
+            <p><strong>After the first response, say:</strong></p>
+            <ul>
+              <li>"Make it more concise"</li>
+              <li>"Add more technical details"</li>
+              <li>"Rewrite this in a friendlier tone"</li>
+              <li>"Focus more on [specific aspect]"</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <h3 class="card-subtitle">🔍 Ask Follow-Up Questions</h3>
+            <p><strong>Dig deeper:</strong></p>
+            <ul>
+              <li>"Can you explain step 3 in more detail?"</li>
+              <li>"What are the potential drawbacks of this approach?"</li>
+              <li>"Give me an alternative solution"</li>
+              <li>"How would this work in [different context]?"</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <h3 class="card-subtitle">🔧 Fix Mistakes</h3>
+            <p><strong>If the AI gets something wrong:</strong></p>
+            <ul>
+              <li>"That's not quite right. I need [correction]."</li>
+              <li>"Actually, ignore my previous request. Instead..."</li>
+              <li>"Let's start over with a different approach"</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
+      <!-- 🎓 MORE ADVANCED TECHNIQUES -->
       <section>
-        <h2 id="gemini-tips">💎 Gemini-Specific Tips</h2>
-        
-        <h3>Gemini Model Variants</h3>
-        <ul>
-          <li><strong>Gemini Pro:</strong> Best for complex reasoning and analysis</li>
-          <li><strong>Gemini Flash:</strong> Faster responses for simpler tasks</li>
-        </ul>
+        <h2>🎓 More Advanced Techniques</h2>
 
-        <h3>Leveraging Gemini's Strengths</h3>
-        <ul>
-          <li><strong>Multimodal:</strong> Combine text with images for richer context</li>
-          <li><strong>Large Context:</strong> Can handle very long documents</li>
-          <li><strong>Code Understanding:</strong> Excellent at code analysis and generation</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 id="session-prompts">⚙️ Session Prompts (System Messages)</h2>
-        <p>Use ReactorAI's session prompt feature to set consistent behavior:</p>
-
-        <h3>General Assistant</h3>
-        <div class="card card--compact card--border-accent">
-          <code>
-You are a helpful, accurate, and concise assistant. Always provide clear explanations and ask for clarification when needed.
-          </code>
+        <h3>📋 Constraint Setting</h3>
+        <p>Add specific constraints to get exactly what you need.</p>
+        <div class="card card--compact">
+          <code>"Write a 300-word product description for [product]. Requirements: Must mention [feature 1, feature 2, feature 3]. Avoid using the words 'revolutionary' or 'game-changing'. Target audience: small business owners."</code>
         </div>
 
-        <h3>Code Review Assistant</h3>
-        <div class="card card--compact card--border-accent">
-          <code>
-You are an expert code reviewer. Focus on code quality, security, performance, and best practices. Provide specific, actionable feedback.
-          </code>
+        <h3>🔀 Perspective Shift</h3>
+        <p>Ask the AI to consider multiple viewpoints.</p>
+        <div class="card card--compact">
+          <code>"Analyze this business decision from three perspectives: 1) Financial impact, 2) Employee morale, 3) Customer satisfaction. Then give a balanced recommendation."</code>
         </div>
 
-        <h3>Creative Writing Partner</h3>
-        <div class="card card--compact card--border-accent">
-          <code>
-You are a creative writing assistant. Help brainstorm ideas, improve prose, and provide constructive feedback on writing style and structure.
-          </code>
-        </div>
-      </section>
-
-      <section>
-        <h2 id="examples">💡 Example Prompts</h2>
-        
-        <h3>Code Generation</h3>
-        <div class="card card--compact card--border-accent">
-          <p class="card-highlight" style="font-weight: 700;">Prompt:</p>
-          <p>Create a Python function that validates email addresses. Include error handling, type hints, and docstrings. Test it with both valid and invalid examples.</p>
+        <h3>📊 Structured Output</h3>
+        <p>Request specific formats for organized results.</p>
+        <div class="card card--compact">
+          <code>"List 5 pros and cons of remote work. Format as a table with columns: Pro | Why it matters | Con | Why it matters"</code>
         </div>
 
-        <h3>Data Analysis</h3>
-        <div class="card card--compact card--border-accent">
-          <p class="card-highlight" style="font-weight: 700;">Prompt:</p>
-          <p>Analyze this sales data and identify the top 3 trends. Present your findings in a clear format with actionable recommendations: [paste data]</p>
+        <h3>🎭 Socratic Method</h3>
+        <p>Let the AI guide you to answers through questions.</p>
+        <div class="card card--compact">
+          <code>"I'm struggling to decide between career path A and B. Instead of telling me what to choose, ask me 5 questions that will help me make this decision myself."</code>
         </div>
 
-        <h3>Learning Assistant</h3>
-        <div class="card card--compact card--border-accent">
-          <p class="card-highlight" style="font-weight: 700;">Prompt:</p>
-          <p>Explain quantum computing to me like I'm a computer science student. Use analogies, provide examples, and suggest resources for deeper learning.</p>
+        <h3>🧩 Template Filling</h3>
+        <p>Provide a template and let the AI complete it.</p>
+        <div class="card card--compact">
+          <code>"Fill in this job description template:
+
+[Company name] is seeking a [Job Title] to [main responsibility]. 
+
+Key Responsibilities:
+- [item 1]
+- [item 2]
+- [item 3]
+
+Required Skills:
+- [skill 1]
+- [skill 2]
+
+Company: TechStartup Inc.
+Role: Senior Backend Engineer
+Focus: Building scalable API infrastructure"</code>
         </div>
       </section>
 
+      <!-- 🔧 TROUBLESHOOTING SECTION -->
       <section>
         <h2 id="troubleshooting">🔧 Troubleshooting Common Issues</h2>
-        
-        <h3>Getting Inconsistent Results</h3>
-        <ul>
-          <li>Make your prompts more specific</li>
-          <li>Use session prompts for consistent behavior</li>
-          <li>Provide more context and examples</li>
-        </ul>
 
-        <h3>Responses Too Long/Short</h3>
-        <ul>
-          <li>Specify desired length explicitly</li>
-          <li>Use phrases like "briefly explain" or "provide a detailed analysis"</li>
-          <li>Give examples of the desired length</li>
-        </ul>
 
-        <h3>AI Not Following Instructions</h3>
-        <ul>
-          <li>Break complex requests into smaller steps</li>
-          <li>Use numbered lists for multi-part instructions</li>
-          <li>Emphasize critical requirements</li>
-        </ul>
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <div class="card card--compact"
+            style="background: var(--bg-light); border-left: 4px solid var(--color-error);">
+            <h3 style="margin: 0 0 12px 0; color: var(--color-error);">🚫 Problem: Generic or Vague Responses</h3>
+            <p style="margin: 0 0 8px 0;"><strong>Why it happens:</strong> Your prompt was too vague or the AI needs
+              more context.</p>
+            <p style="margin: 0 0 8px 0;"><strong>Fix:</strong></p>
+            <ul style="margin: 0;">
+              <li>Add specific details and constraints</li>
+              <li>Provide examples of what you want</li>
+              <li>Use "Be specific" or "Give concrete examples"</li>
+              <li>Break complex requests into smaller parts</li>
+            </ul>
+          </div>
+
+          <div class="card card--compact"
+            style="background: var(--bg-light); border-left: 4px solid var(--color-warning);">
+            <h3 style="margin: 0 0 12px 0; color: var(--color-warning);">🤔 Problem: AI Misunderstands Your Intent</h3>
+            <p style="margin: 0 0 8px 0;"><strong>Why it happens:</strong> Ambiguous phrasing or unclear context.</p>
+            <p style="margin: 0 0 8px 0;"><strong>Fix:</strong></p>
+            <ul style="margin: 0;">
+              <li>Rephrase your question more clearly</li>
+              <li>Add "To clarify, I mean..."</li>
+              <li>Provide context: "I'm a [role] working on [project]..."</li>
+              <li>Use simple, direct language</li>
+            </ul>
+          </div>
+
+          <div class="card card--compact"
+            style="background: var(--bg-light); border-left: 4px solid var(--color-info);">
+            <h3 style="margin: 0 0 12px 0; color: var(--color-info);">📏 Problem: Output Too Long or Too Short</h3>
+            <p style="margin: 0 0 8px 0;"><strong>Fix:</strong></p>
+            <ul style="margin: 0;">
+              <li>Specify exact length: "in 200 words" or "in 3 paragraphs"</li>
+              <li>Use "Make it more concise" or "Expand on this"</li>
+              <li>Request "Give me just the key points"</li>
+              <li>Ask for "A detailed explanation with examples"</li>
+            </ul>
+          </div>
+
+          <div class="card card--compact"
+            style="background: var(--bg-light); border-left: 4px solid var(--secondary-color);">
+            <h3 style="margin: 0 0 12px 0; color: var(--secondary-color);">🎨 Problem: Wrong Tone or Style</h3>
+            <p style="margin: 0 0 8px 0;"><strong>Fix:</strong></p>
+            <ul style="margin: 0;">
+              <li>Specify tone: "Write in a casual/formal/friendly/professional tone"</li>
+              <li>Give style guidance: "Write like [author/publication]"</li>
+              <li>Request "Rewrite this with [adjective] language"</li>
+              <li>Use "Avoid jargon" or "Use technical terminology"</li>
+            </ul>
+          </div>
+
+          <div class="card card--compact" style="background: var(--bg-light); border-left: 4px solid var(--accent);">
+            <h3 style="margin: 0 0 12px 0; color: var(--accent);">🔄 Problem: AI Repeats Itself</h3>
+            <p style="margin: 0 0 8px 0;"><strong>Fix:</strong></p>
+            <ul style="margin: 0;">
+              <li>Say "Give me different examples"</li>
+              <li>Request "Approach this from a new angle"</li>
+              <li>Use "Without repeating what you said before..."</li>
+              <li>Start a new session for a fresh perspective</li>
+            </ul>
+          </div>
+
+          <div class="card card--compact"
+            style="background: var(--bg-light); border-left: 4px solid var(--color-success);">
+            <h3 style="margin: 0 0 12px 0; color: var(--color-success);">⚡ Problem: Response Cuts Off Mid-Sentence</h3>
+            <p style="margin: 0 0 8px 0;"><strong>Why it happens:</strong> Hit model's length limit.</p>
+            <p style="margin: 0 0 8px 0;"><strong>Fix:</strong></p>
+            <ul style="margin: 0;">
+              <li>Simply say "Continue" or "Keep going"</li>
+              <li>Ask for a summary: "Summarize what you were about to say"</li>
+              <li>Break request into smaller chunks</li>
+              <li>Request "Part 1 of 3" approach for long content</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card card--tip" style="margin-top: 24px;">
+          <h3 class="card-title">Pro Tip: Context Persistence</h3>
+          <p>ReactorAI remembers your conversation history within a session. Use this to your advantage by building on
+            previous responses without re-explaining context every time!</p>
+        </div>
+      </section>
+
+      <!-- 💡 BEST PRACTICES -->
+      <section>
+        <h2>💡 Best Practices for Any Use Case</h2>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div class="feature-card">
+            <h3 class="card-subtitle">✅ Do This</h3>
+            <ul>
+              <li>Be specific and detailed</li>
+              <li>Provide context and background</li>
+              <li>Specify desired format and length</li>
+              <li>Give examples when possible</li>
+              <li>Break complex tasks into steps</li>
+              <li>Use follow-up questions to refine</li>
+              <li>Specify your audience or use case</li>
+              <li>Emphasize critical requirements</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <h3 class="card-subtitle">❌ Avoid This</h3>
+            <ul>
+              <li>One-word prompts</li>
+              <li>Assuming the AI knows your context</li>
+              <li>Vague requests without details</li>
+              <li>Expecting perfection on first try</li>
+              <li>Giving up after one bad response</li>
+              <li>Using ambiguous pronouns ("it", "that")</li>
+              <li>Asking multiple unrelated questions at once</li>
+              <li>Forgetting to specify constraints</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card card--accent" style="margin-top: 24px;">
+          <h3 class="card-subtitle">🎯 The Ultimate Prompt Formula</h3>
+          <p><strong>[Role/Context] + [Task] + [Constraints] + [Format] + [Tone]</strong></p>
+          <div style="background: var(--bg-tertiary); padding: 15px; border-radius: 8px; margin-top: 12px;">
+            <code style="display: block; line-height: 1.6;">
+"You are a <strong style="color: #FCD34D;">[marketing expert]</strong>. 
+Create a <strong style="color: #FCD34D;">[social media campaign]</strong> 
+for <strong style="color: #FCD34D;">[product launch]</strong>. 
+Requirements: <strong style="color: #FCD34D;">[must include 5 posts, target Gen Z, avoid clichés]</strong>.
+Format: <strong style="color: #FCD34D;">[Table with columns: Post, Platform, Copy, Hashtags]</strong>.
+Tone: <strong style="color: #FCD34D;">[Energetic and authentic]</strong>."
+            </code>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🚀 MODEL-SPECIFIC TIPS -->
+      <section>
+        <h2>🚀 Model-Specific Optimization Tips</h2>
+
+        <h3>🦙 Ollama (Local Models)</h3>
+        <div class="card card--compact card--border-accent">
+          <h4>Best for:</h4>
+          <ul>
+            <li>Privacy-sensitive tasks (legal, medical, financial data)</li>
+            <li>Offline work without internet</li>
+            <li>Fast iterations when testing prompts</li>
+            <li>Code generation and debugging</li>
+          </ul>
+          <h4 style="margin-top: 12px;">Tips:</h4>
+          <ul>
+            <li>Keep prompts concise - local models have smaller context windows</li>
+            <li>Use CodeLlama for programming tasks</li>
+            <li>Break complex tasks into smaller chunks</li>
+            <li>Be patient with longer responses - processing is local</li>
+          </ul>
+        </div>
+
+        <h3 style="margin-top: 20px;">💎 Gemini Pro/Flash</h3>
+        <div class="card card--compact card--border-accent">
+          <h4>Best for:</h4>
+          <ul>
+            <li>Complex reasoning and analysis</li>
+            <li>Large documents or codebases</li>
+            <li>Multilingual tasks</li>
+            <li>Creative writing with nuance</li>
+          </ul>
+          <h4 style="margin-top: 12px;">Tips:</h4>
+          <ul>
+            <li>Leverage the larger context window - paste entire articles or code files</li>
+            <li>Use Gemini for complex multi-step reasoning</li>
+            <li>Great for "explain this codebase" questions</li>
+            <li>Request detailed analysis - Gemini excels at depth</li>
+          </ul>
+        </div>
+
+        <div class="card card--tip" style="margin-top: 24px;">
+          <h3 class="card-title">Mix and Match</h3>
+          <p>Use Ollama for quick local iterations and Gemini for complex analysis. ReactorAI makes switching between
+            models seamless!</p>
+        </div>
+      </section>
+
+      <!-- 🎬 REAL-WORLD EXAMPLES -->
+      <section>
+        <h2>🎬 Real-World Example Prompts</h2>
+        <p>Copy, paste, and adapt these proven prompts for your needs.</p>
+
+        <div class="code-block" style="margin-top: 16px;">
+          <h4 style="margin: 0 0 8px 0;">📊 Data Analysis</h4>
+          <code>"I have sales data showing a 30% drop in Q3. Analyze potential causes. Consider: seasonality, market trends, competitor actions, internal changes. Provide 5 most likely reasons ranked by probability and suggest data points I should investigate for each."</code>
+        </div>
+
+        <div class="code-block" style="margin-top: 16px;">
+          <h4 style="margin: 0 0 8px 0;">✍️ Content Repurposing</h4>
+          <code>"Take this 2000-word blog post [paste] and create: 1) A LinkedIn post (200 words), 2) 5 tweet-length takeaways, 3) An email newsletter intro (150 words). Maintain the key points but adjust tone for each platform."</code>
+        </div>
+
+        <div class="code-block" style="margin-top: 16px;">
+          <h4 style="margin: 0 0 8px 0;">💻 Code Review</h4>
+          <code>"Review this Python code for: 1) Security vulnerabilities, 2) Performance bottlenecks, 3) Code style issues, 4) Missing error handling. For each issue found, explain the risk and suggest a fix.
+
+[paste code here]"</code>
+        </div>
+
+        <div class="code-block" style="margin-top: 16px;">
+          <h4 style="margin: 0 0 8px 0;">🎯 Decision Making</h4>
+          <code>"I need to decide between three project management tools: Asana, Monday, and ClickUp. Create a comparison focusing on: pricing for teams of 10, ease of use, integration with Google Workspace, reporting capabilities. Present as a table with a recommendation for a remote marketing team."</code>
+        </div>
+
+        <div class="code-block" style="margin-top: 16px;">
+          <h4 style="margin: 0 0 8px 0;">📚 Learning Aid</h4>
+          <code>"I'm learning React hooks. Explain useState, useEffect, and useContext. For each: 1) What problem it solves, 2) Basic syntax example, 3) Common mistakes to avoid, 4) One practical use case. Explain like I'm familiar with JavaScript but new to React."</code>
+        </div>
+
+        <div class="code-block" style="margin-top: 16px;">
+          <h4 style="margin: 0 0 8px 0;">🔍 Research Synthesis</h4>
+          <code>"Summarize the current state of quantum computing in 2025. Cover: 1) Latest breakthroughs, 2) Main challenges remaining, 3) Practical applications available now, 4) Timeline predictions for mainstream adoption. Cite general industry consensus where applicable. Target audience: tech-savvy business leaders."</code>
+        </div>
+      </section>
+
+      <!-- 🎓 LEARNING RESOURCES -->
+      <section
+        style="background: linear-gradient(135deg, rgba(62, 168, 255, 0.05) 0%, rgba(46, 211, 198, 0.05) 100%); padding: 24px; border-radius: 12px; border: 1px solid var(--border-emphasis);">
+        <h2>🎓 Keep Learning</h2>
+        <p>Prompting is a skill that improves with practice. The more you use ReactorAI, the better you'll get at
+          getting exactly what you need.</p>
+
+        <div
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 16px;">
+          <div class="card card--compact">
+            <h4>💬 Experiment</h4>
+            <p>Try different phrasings for the same request and see what works best.</p>
+          </div>
+          <div class="card card--compact">
+            <h4>📝 Save Good Prompts</h4>
+            <p>When you craft a prompt that works well, save it as a template for future use.</p>
+          </div>
+          <div class="card card--compact">
+            <h4>🔄 Iterate</h4>
+            <p>Don't expect perfection instantly. Refine responses through follow-up questions.</p>
+          </div>
+          <div class="card card--compact">
+            <h4>🎯 Be Patient</h4>
+            <p>Complex tasks may require multiple back-and-forth exchanges to get right.</p>
+          </div>
+        </div>
+
+        <div class="card card--accent" style="margin-top: 24px; text-align: center;">
+          <h3 style="margin: 0 0 12px 0;">Ready to Master AI Prompting?</h3>
+          <p style="margin: 0;">Start practicing with ReactorAI today. Every conversation makes you better!</p>
+          <div style="margin-top: 20px;">
+            <a href="index.html" class="button" style="display: inline-block;">Get Started with ReactorAI</a>
+          </div>
+        </div>
       </section>
     </main>
   </div>
@@ -271,4 +794,5 @@ You are a creative writing assistant. Help brainstorm ideas, improve prose, and 
     <p>&copy; 2025 ReactorAI. All rights reserved.</p>
   </footer>
 </body>
+
 </html>

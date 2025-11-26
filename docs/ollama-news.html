@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ollama Models News (Beta) – ReactorAI</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="canonical" href="https://appbigas.com/ollama-news.html" />
+  <link rel="canonical" href="https://reactoraiapp.com/ollama-news.html" />
 
   <!-- ✅ SEO Meta -->
-  <meta name="description" content="Stay updated with the latest Ollama model releases and announcements. ReactorAI brings you curated news about new AI models, updates, and capabilities. Core features completely free." />
-  <meta name="keywords" content="Ollama news, Ollama models, AI model releases, ReactorAI, free AI client, Llama models, Code Llama, Mistral, model updates, AI announcements, local LLM news" />
+  <meta name="description"
+    content="Stay updated with the latest Ollama model releases and announcements. ReactorAI brings you curated news about new AI models, updates, and capabilities. Core features completely free." />
+  <meta name="keywords"
+    content="Ollama news, Ollama models, AI model releases, ReactorAI, free AI client, Llama models, Code Llama, Mistral, model updates, AI announcements, local LLM news" />
   <meta name="author" content="ReactorAI Team" />
   <meta name="robots" content="index, follow" />
 
   <!-- ✅ Social Meta -->
   <meta property="og:title" content="Ollama Models News (Beta) – ReactorAI" />
-  <meta property="og:description" content="Latest Ollama model releases and updates. ReactorAI provides curated news about AI models with free core functionality." />
+  <meta property="og:description"
+    content="Latest Ollama model releases and updates. ReactorAI provides curated news about AI models with free core functionality." />
   <meta property="og:image" content="https://reactorai.s3.amazonaws.com/logo.png" />
-  <meta property="og:url" content="https://appbigas.com/ollama-news.html" />
+  <meta property="og:url" content="https://reactoraiapp.com/ollama-news.html" />
   <meta property="og:type" content="website" />
 
   <!-- ✅ Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Ollama Models News (Beta) – ReactorAI" />
-  <meta name="twitter:description" content="Stay updated with the latest Ollama model releases and AI announcements through ReactorAI's curated news page." />
+  <meta name="twitter:description"
+    content="Stay updated with the latest Ollama model releases and AI announcements through ReactorAI's curated news page." />
   <meta name="twitter:image" content="https://reactorai.s3.amazonaws.com/logo.png" />
 
   <!-- ✅ Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9H9MF1VFSR"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-9H9MF1VFSR');
   </script>
@@ -42,11 +47,11 @@
     "@type": "WebPage",
     "name": "Ollama Models News (Beta)",
     "description": "Latest Ollama model releases and AI news curated for ReactorAI users",
-    "url": "https://appbigas.com/ollama-news.html",
+    "url": "https://reactoraiapp.com/ollama-news.html",
     "isPartOf": {
       "@type": "WebSite",
       "name": "ReactorAI",
-      "url": "https://appbigas.com"
+      "url": "https://reactoraiapp.com"
     },
     "about": {
       "@type": "Thing",
@@ -63,135 +68,23 @@
 
   <!-- Page-specific styles -->
   <style>
-    /* Theme variables */
-    :root {
-      --bg-dark: #1e1e1e;
-      --bg-light: #2a2a2a;
-      --text-light: #eaeaea;
-      --accent: #00bcd4;
-      --link-color: #4fc3f7;
-      --link-hover: #81d4fa;
-    }
-
-    [data-theme="light"] {
-      --bg-dark: #ffffff;
-      --bg-light: #f5f5f5;
-      --text-light: #333333;
-      --accent: #00bcd4;
-      --link-color: #0288d1;
-      --link-hover: #0277bd;
-    }
-
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-light);
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    /* Theme toggle button */
-    .theme-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: var(--accent);
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      font-size: 1.2em;
-      cursor: pointer;
-      box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
-      transition: all 0.3s ease;
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .theme-toggle:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
-    }
-
-    /* Light theme adjustments */
-    [data-theme="light"] .news-card {
-      background: var(--bg-light);
-      border-color: #ddd;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    [data-theme="light"] .news-card:hover {
-      box-shadow: 0 8px 25px rgba(0, 188, 212, 0.2);
-    }
-
-    [data-theme="light"] .model-card {
-      background: var(--bg-light);
-      border-color: #ddd;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    [data-theme="light"] .model-card:hover {
-      box-shadow: 0 8px 25px rgba(0, 188, 212, 0.2);
-    }
-
-    [data-theme="light"] .filter-btn {
-      background: #e0e0e0;
-      color: #333;
-      border-color: #ccc;
-    }
-
-    [data-theme="light"] .filter-btn:hover,
-    [data-theme="light"] .filter-btn.active {
-      background: var(--accent);
-      color: white;
-      border-color: var(--accent);
-    }
-
-    [data-theme="light"] .tag {
-      background: #e0e0e0;
-      color: #666;
-    }
-
-    [data-theme="light"] .news-date {
-      color: #666;
-    }
-
-    [data-theme="light"] header {
-      background-color: var(--bg-light);
-      border-bottom-color: #ddd;
-    }
-
-    [data-theme="light"] .topnav {
-      background: var(--bg-light);
-      border-bottom-color: #ddd;
-    }
-
-    [data-theme="light"] footer {
-      background-color: var(--bg-light);
-      border-top-color: #ddd;
-    }
-
-    /* Beta badge styling */
+    /* Beta badge styling override */
     .beta-badge {
-      background: linear-gradient(135deg, #00bcd4, #0097a7);
-      color: white;
-      font-size: 0.7em;
-      padding: 2px 6px;
-      border-radius: 10px;
-      margin-left: 4px;
-      font-weight: bold;
+      background: var(--color-warning-bg);
+      color: var(--color-warning);
+      border: 1px solid var(--color-warning-border);
     }
 
-    /* Beta notice section */
+    /* Beta notice section override */
     .beta-notice {
-      background: linear-gradient(135deg, #00bcd4, #0097a7);
-      color: white;
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(245, 158, 11, 0.05) 100%);
+      border-left: 4px solid var(--color-warning);
+      color: var(--text-light);
       padding: 20px 30px;
       border-radius: 8px;
       text-align: center;
       margin: 20px 0;
-      box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+      box-shadow: var(--shadow-md);
     }
 
     /* News container */
@@ -205,7 +98,7 @@
     /* News cards */
     .news-card {
       background: var(--bg-light);
-      border: 1px solid #333;
+      border: 1px solid var(--border-default);
       border-radius: 12px;
       padding: 20px;
       transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -213,7 +106,7 @@
 
     .news-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0, 188, 212, 0.3);
+      box-shadow: var(--shadow-lg);
       border-color: var(--accent);
     }
 
@@ -235,13 +128,13 @@
     }
 
     .news-date {
-      color: #888;
+      color: var(--text-secondary);
       font-size: 0.9em;
       white-space: nowrap;
     }
 
     .news-category {
-      background: rgba(0, 188, 212, 0.2);
+      background: var(--primary-alpha-10);
       color: var(--accent);
       padding: 4px 8px;
       border-radius: 4px;
@@ -255,6 +148,7 @@
       object-fit: cover;
       border-radius: 8px;
       margin: 10px 0;
+      border: 1px solid var(--border-subtle);
     }
 
     .news-summary {
@@ -294,11 +188,12 @@
     }
 
     .tag {
-      background: #444;
-      color: #ccc;
+      background: var(--bg-tertiary);
+      color: var(--text-secondary);
       padding: 2px 8px;
       border-radius: 12px;
       font-size: 0.8em;
+      border: 1px solid var(--border-subtle);
     }
 
     /* Category filters */
@@ -311,9 +206,9 @@
     }
 
     .filter-btn {
-      background: #444;
+      background: var(--bg-tertiary);
       color: var(--text-light);
-      border: 1px solid #555;
+      border: 1px solid var(--border-default);
       padding: 10px 20px;
       border-radius: 25px;
       cursor: pointer;
@@ -327,7 +222,7 @@
       color: white;
       border-color: var(--accent);
       transform: translateY(-2px);
-      box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+      box-shadow: var(--shadow-primary);
     }
 
     /* Model cards */
@@ -340,28 +235,40 @@
 
     .model-card {
       background: var(--bg-light);
-      border: 1px solid #333;
+      border: 1px solid var(--border-default);
       border-radius: 12px;
       padding: 25px;
       text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .model-card:link,
+    .model-card:visited,
+    .model-card:hover,
+    .model-card:focus {
+      text-decoration: none;
     }
 
     .model-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0, 188, 212, 0.3);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent);
     }
 
     .model-icon {
       width: 60px;
       height: 60px;
       margin: 0 auto 15px auto;
-      background: var(--accent);
+      background: var(--primary-alpha-10);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 2em;
+      border: 1px solid var(--border-emphasis);
     }
 
     .model-name {
@@ -371,7 +278,7 @@
     }
 
     .model-description {
-      color: var(--text-light);
+      color: var(--text-secondary);
       line-height: 1.5;
       margin-bottom: 15px;
     }
@@ -384,32 +291,34 @@
     }
 
     .model-badge {
-      background: rgba(79, 195, 247, 0.2);
-      color: var(--link-color);
+      background: var(--primary-alpha-10);
+      color: var(--accent);
       padding: 4px 10px;
       border-radius: 12px;
       font-size: 0.85em;
       font-weight: bold;
+      border: 1px solid var(--primary-alpha-20);
     }
 
     /* Responsive design */
     @media (max-width: 768px) {
+
       .news-container,
       .models-container {
         grid-template-columns: 1fr;
       }
-      
+
       .category-filters {
         justify-content: flex-start;
         overflow-x: auto;
         padding: 10px 0;
       }
-      
+
       .news-header {
         flex-direction: column;
         align-items: flex-start;
       }
-      
+
       .news-footer {
         flex-direction: column;
         align-items: flex-start;
@@ -417,6 +326,7 @@
     }
   </style>
 </head>
+
 <body>
   <!-- Theme Toggle Button -->
   <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
@@ -428,22 +338,24 @@
       <img src="https://reactorai.s3.amazonaws.com/logo.png" alt="ReactorAI Logo" style="height: 50px;" />
       <h1 style="margin: 0;">ReactorAI</h1>
     </div>
-    <p>Chat with Ollama and Gemini AI models on macOS, iOS, and Windows</p>
+    <p style="font-size: 1.2em; margin: 16px 0 8px 0; font-weight: 500;">Chat with Ollama and Gemini AI models on macOS,
+      iOS, and Windows</p>
 
     <!-- Store Badges -->
     <div class="store-links">
       <a href="https://apps.apple.com/eg/app/reactorai/id6739567267" target="_blank" rel="noopener">
         <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
-             alt="Download on the App Store" />
+          alt="Download on the App Store" />
       </a>
       <a href="https://apps.microsoft.com/store/detail/9NLWPTD23PG0?cid=DevShareMCLPCB" target="_blank" rel="noopener">
         <img src="https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png"
-             alt="Get it from Microsoft" />
+          alt="Get it from Microsoft" />
       </a>
     </div>
     <div class="store-links">
       <a href="https://www.buymeacoffee.com/ayman3000" target="_blank" rel="noopener">
-        <img src="https://cdn.ko-fi.com/cdn/kofi5.png?v=3" alt="Buy Me a Coffee" style="height: 36px; margin-top: 12px;" />
+        <img src="https://cdn.ko-fi.com/cdn/kofi5.png?v=3" alt="Buy Me a Coffee"
+          style="height: 36px; margin-top: 12px;" />
       </a>
       <p style="margin-top: 8px; font-size: 0.95em; color: #aaa;">
         Like ReactorAI? Support future updates ❤️
@@ -453,10 +365,11 @@
 
   <!-- Simple Top Navigation -->
   <nav class="topnav">
+    <a href="index.html">Home</a>
     <a href="installation.html">Installation</a>
     <a href="documentation.html">Documentation <span class="badge badge--small">NEW</span></a>
     <a href="prompting-guide.html">Prompting Guide</a>
-    <a href="ollama-news.html">Ollama News <span class="beta-badge">BETA</span></a>
+    <a href="ollama-news.html" class="active">Ollama News <span class="badge badge--small badge--warm">BETA</span></a>
     <a href="faq.html">FAQ</a>
   </nav>
 
@@ -464,12 +377,104 @@
     <!-- Beta Notice Section -->
     <section class="beta-notice">
       <h2 style="margin: 0 0 10px 0; font-size: 1.5em; color: #1e1e1e;">🧪 Beta Feature - Ollama Models News</h2>
-      <p style="margin: 0; font-size: 1.1em;">This page is currently in beta. We're curating the latest Ollama model releases and updates to keep you informed. <strong>Your feedback helps us improve!</strong></p>
+      <p style="margin: 0; font-size: 1.1em;">This page is currently in beta. We're curating the latest Ollama model
+        releases and updates to keep you informed. <strong>Your feedback helps us improve!</strong></p>
     </section>
+
+    <!-- Featured Models Section -->
+    <section>
+      <h2>🌟 Featured Models</h2>
+      <p>Discover the most popular and capable Ollama models currently available, hand-picked for ReactorAI users.</p>
+    </section>
+
+    <div class="models-container">
+      <!-- GPT-OSS Model -->
+      <a class="model-card" href="https://ollama.com/library/gpt-oss" target="_blank" rel="noopener">
+        <div class="model-icon">🛠️</div>
+        <h3 class="model-name">gpt-oss</h3>
+        <p class="model-description">OpenAI's open-weight series for powerful reasoning, agentic tasks, and versatile
+          developer workflows across 20B and 120B sizes.</p>
+        <div class="model-badges">
+          <span class="model-badge">Tools</span>
+          <span class="model-badge">Thinking</span>
+          <span class="model-badge">Cloud</span>
+          <span class="model-badge">20B</span>
+          <span class="model-badge">120B</span>
+        </div>
+      </a>
+
+      <!-- Qwen3-VL Model -->
+      <a class="model-card" href="https://ollama.com/library/qwen3-vl" target="_blank" rel="noopener">
+        <div class="model-icon">👁️</div>
+        <h3 class="model-name">qwen3-vl</h3>
+        <p class="model-description">Qwen family's top vision-language model with strong multimodal reasoning from 2B up
+          to 235B variants.</p>
+        <div class="model-badges">
+          <span class="model-badge">Vision</span>
+          <span class="model-badge">Tools</span>
+          <span class="model-badge">Cloud</span>
+          <span class="model-badge">2B-235B</span>
+        </div>
+      </a>
+
+      <!-- DeepSeek-R1 Model -->
+      <a class="model-card" href="https://ollama.com/library/deepseek-r1" target="_blank" rel="noopener">
+        <div class="model-icon">🧠</div>
+        <h3 class="model-name">deepseek-r1</h3>
+        <p class="model-description">Open reasoning family approaching O3/Gemini 2.5 Pro performance with a wide range
+          of sizes from 1.5B to 671B.</p>
+        <div class="model-badges">
+          <span class="model-badge">Tools</span>
+          <span class="model-badge">Thinking</span>
+          <span class="model-badge">1.5B-671B</span>
+        </div>
+      </a>
+
+      <!-- Qwen3-Coder Model -->
+      <a class="model-card" href="https://ollama.com/library/qwen3-coder" target="_blank" rel="noopener">
+        <div class="model-icon">💻</div>
+        <h3 class="model-name">qwen3-coder</h3>
+        <p class="model-description">Alibaba's long-context coding and agentic model line tuned for robust code
+          generation and tool use, available up to 480B.</p>
+        <div class="model-badges">
+          <span class="model-badge">Tools</span>
+          <span class="model-badge">Cloud</span>
+          <span class="model-badge">30B</span>
+          <span class="model-badge">480B</span>
+        </div>
+      </a>
+
+      <!-- Gemma3 Model -->
+      <a class="model-card" href="https://ollama.com/library/gemma3" target="_blank" rel="noopener">
+        <div class="model-icon">💠</div>
+        <h3 class="model-name">gemma3</h3>
+        <p class="model-description">Google's current most capable single-GPU friendly model family, spanning 270M to
+          27B with vision support.</p>
+        <div class="model-badges">
+          <span class="model-badge">Vision</span>
+          <span class="model-badge">270M-27B</span>
+          <span class="model-badge">Single GPU</span>
+        </div>
+      </a>
+
+      <!-- GLM-4.6 Model -->
+      <a class="model-card" href="https://ollama.com/library/glm-4.6" target="_blank" rel="noopener">
+        <div class="model-icon">🌐</div>
+        <h3 class="model-name">glm-4.6</h3>
+        <p class="model-description">Advanced agentic GLM series focused on reasoning and coding capabilities with cloud
+          deployment options.</p>
+        <div class="model-badges">
+          <span class="model-badge">Cloud</span>
+          <span class="model-badge">Agentic</span>
+          <span class="model-badge">Reasoning</span>
+        </div>
+      </a>
+    </div>
 
     <section>
       <h2>🔥 Latest Ollama Model News</h2>
-      <p>Stay up-to-date with the newest Ollama model releases, updates, and community highlights. ReactorAI brings you curated news about the AI models that matter most to our community.</p>
+      <p>Stay up-to-date with the newest Ollama model releases, updates, and community highlights. ReactorAI brings you
+        curated news about the AI models that matter most to our community.</p>
     </section>
 
     <!-- Category Filters -->
@@ -491,10 +496,14 @@
           <time class="news-date" datetime="2024-12-06">December 6, 2024</time>
         </div>
         <span class="news-category">Language Models</span>
-        <img src="https://reactorai.s3.amazonaws.com/news/llama-3-3-preview.png" alt="Llama 3.3 70B model preview" class="news-image" onerror="this.style.display='none'">
-        <p class="news-summary">Meta releases Llama 3.3 70B with significantly improved reasoning capabilities and better multilingual support. This model shows substantial improvements in code generation and mathematical problem-solving.</p>
+        <img src="https://reactorai.s3.amazonaws.com/news/llama-3-3-preview.png" alt="Llama 3.3 70B model preview"
+          class="news-image" onerror="this.style.display='none'">
+        <p class="news-summary">Meta releases Llama 3.3 70B with significantly improved reasoning capabilities and
+          better multilingual support. This model shows substantial improvements in code generation and mathematical
+          problem-solving.</p>
         <div class="news-footer">
-          <a href="https://ollama.com/library/llama3.3" target="_blank" rel="noopener" class="read-more-btn">Learn More</a>
+          <a href="https://ollama.com/library/llama3.3" target="_blank" rel="noopener" class="read-more-btn">Learn
+            More</a>
           <div class="news-tags">
             <span class="tag">Reasoning</span>
             <span class="tag">70B</span>
@@ -510,10 +519,13 @@
           <time class="news-date" datetime="2023-08-24">August 24, 2023</time>
         </div>
         <span class="news-category">Code Models</span>
-        <img src="https://reactorai.s3.amazonaws.com/news/codellama-python.png" alt="CodeLlama Python specialist preview" class="news-image" onerror="this.style.display='none'">
-        <p class="news-summary">CodeLlama variant specifically fine-tuned for Python development. Excels at Python frameworks, debugging, and code optimization with improved context understanding.</p>
+        <img src="https://reactorai.s3.amazonaws.com/news/codellama-python.png"
+          alt="CodeLlama Python specialist preview" class="news-image" onerror="this.style.display='none'">
+        <p class="news-summary">CodeLlama variant specifically fine-tuned for Python development. Excels at Python
+          frameworks, debugging, and code optimization with improved context understanding.</p>
         <div class="news-footer">
-          <a href="https://ollama.com/library/codellama:python" target="_blank" rel="noopener" class="read-more-btn">Learn More</a>
+          <a href="https://ollama.com/library/codellama:python" target="_blank" rel="noopener"
+            class="read-more-btn">Learn More</a>
           <div class="news-tags">
             <span class="tag">Python</span>
             <span class="tag">34B</span>
@@ -529,8 +541,10 @@
           <time class="news-date" datetime="2024-01-30">January 30, 2024</time>
         </div>
         <span class="news-category">Multimodal</span>
-        <img src="https://reactorai.s3.amazonaws.com/news/llava-vision.png" alt="LLaVA vision model preview" class="news-image" onerror="this.style.display='none'">
-        <p class="news-summary">Enhanced LLaVA model with better image understanding and detailed visual analysis capabilities. Perfect for document analysis, chart interpretation, and visual reasoning tasks.</p>
+        <img src="https://reactorai.s3.amazonaws.com/news/llava-vision.png" alt="LLaVA vision model preview"
+          class="news-image" onerror="this.style.display='none'">
+        <p class="news-summary">Enhanced LLaVA model with better image understanding and detailed visual analysis
+          capabilities. Perfect for document analysis, chart interpretation, and visual reasoning tasks.</p>
         <div class="news-footer">
           <a href="https://ollama.com/library/llava" target="_blank" rel="noopener" class="read-more-btn">Learn More</a>
           <div class="news-tags">
@@ -548,10 +562,13 @@
           <time class="news-date" datetime="2024-05-22">May 22, 2024</time>
         </div>
         <span class="news-category">Specialized</span>
-        <img src="https://reactorai.s3.amazonaws.com/news/mistral-instruct.png" alt="Mistral Instruct model preview" class="news-image" onerror="this.style.display='none'">
-        <p class="news-summary">Updated Mistral 7B with improved instruction following and better performance on creative writing tasks. Optimized for efficiency while maintaining high quality outputs.</p>
+        <img src="https://reactorai.s3.amazonaws.com/news/mistral-instruct.png" alt="Mistral Instruct model preview"
+          class="news-image" onerror="this.style.display='none'">
+        <p class="news-summary">Updated Mistral 7B with improved instruction following and better performance on
+          creative writing tasks. Optimized for efficiency while maintaining high quality outputs.</p>
         <div class="news-footer">
-          <a href="https://ollama.com/library/mistral" target="_blank" rel="noopener" class="read-more-btn">Learn More</a>
+          <a href="https://ollama.com/library/mistral" target="_blank" rel="noopener" class="read-more-btn">Learn
+            More</a>
           <div class="news-tags">
             <span class="tag">Instruct</span>
             <span class="tag">7B</span>
@@ -567,8 +584,10 @@
           <time class="news-date" datetime="2023-12-27">December 27, 2023</time>
         </div>
         <span class="news-category">Community</span>
-        <img src="https://reactorai.s3.amazonaws.com/news/solar-model.png" alt="Solar community model preview" class="news-image" onerror="this.style.display='none'">
-        <p class="news-summary">Community-developed Solar 10.7B model gaining popularity for its balanced performance across various tasks. Great alternative for users seeking efficiency without sacrificing quality.</p>
+        <img src="https://reactorai.s3.amazonaws.com/news/solar-model.png" alt="Solar community model preview"
+          class="news-image" onerror="this.style.display='none'">
+        <p class="news-summary">Community-developed Solar 10.7B model gaining popularity for its balanced performance
+          across various tasks. Great alternative for users seeking efficiency without sacrificing quality.</p>
         <div class="news-footer">
           <a href="https://ollama.com/library/solar" target="_blank" rel="noopener" class="read-more-btn">Learn More</a>
           <div class="news-tags">
@@ -586,8 +605,10 @@
           <time class="news-date" datetime="2024-12-01">December 1, 2024</time>
         </div>
         <span class="news-category">ReactorAI</span>
-        <img src="https://reactorai.s3.amazonaws.com/news/reactorai-update.png" alt="ReactorAI compatibility update" class="news-image" onerror="this.style.display='none'">
-        <p class="news-summary">ReactorAI now supports all latest Ollama models with improved model switching and enhanced chat history management. Update available on all platforms.</p>
+        <img src="https://reactorai.s3.amazonaws.com/news/reactorai-update.png" alt="ReactorAI compatibility update"
+          class="news-image" onerror="this.style.display='none'">
+        <p class="news-summary">ReactorAI now supports all latest Ollama models with improved model switching and
+          enhanced chat history management. Update available on all platforms.</p>
         <div class="news-footer">
           <a href="https://ollama.com/library" target="_blank" rel="noopener" class="read-more-btn">Learn More</a>
           <div class="news-tags">
@@ -606,83 +627,94 @@
     </section>
 
     <div class="models-container">
-      <!-- EmbeddingGemma Model -->
-      <div class="model-card">
-        <div class="model-icon">💎</div>
-        <h3 class="model-name">EmbeddingGemma</h3>
-        <p class="model-description">Specialized embedding model designed for high-quality text representations and semantic search applications. Perfect for RAG systems and document similarity tasks.</p>
+      <!-- GPT-OSS Model -->
+      <a class="model-card" href="https://ollama.com/library/gpt-oss" target="_blank" rel="noopener">
+        <div class="model-icon">🛠️</div>
+        <h3 class="model-name">gpt-oss</h3>
+        <p class="model-description">OpenAI's open-weight series for powerful reasoning, agentic tasks, and versatile
+          developer workflows across 20B and 120B sizes.</p>
         <div class="model-badges">
-          <span class="model-badge">Embedding</span>
-          <span class="model-badge">Semantic Search</span>
-          <span class="model-badge">RAG</span>
+          <span class="model-badge">Tools</span>
+          <span class="model-badge">Thinking</span>
+          <span class="model-badge">Cloud</span>
+          <span class="model-badge">20B</span>
+          <span class="model-badge">120B</span>
         </div>
-      </div>
+      </a>
+
+      <!-- Qwen3-VL Model -->
+      <a class="model-card" href="https://ollama.com/library/qwen3-vl" target="_blank" rel="noopener">
+        <div class="model-icon">👁️</div>
+        <h3 class="model-name">qwen3-vl</h3>
+        <p class="model-description">Qwen family's top vision-language model with strong multimodal reasoning from 2B up
+          to 235B variants.</p>
+        <div class="model-badges">
+          <span class="model-badge">Vision</span>
+          <span class="model-badge">Tools</span>
+          <span class="model-badge">Cloud</span>
+          <span class="model-badge">2B-235B</span>
+        </div>
+      </a>
+
+      <!-- DeepSeek-R1 Model -->
+      <a class="model-card" href="https://ollama.com/library/deepseek-r1" target="_blank" rel="noopener">
+        <div class="model-icon">🧠</div>
+        <h3 class="model-name">deepseek-r1</h3>
+        <p class="model-description">Open reasoning family approaching O3/Gemini 2.5 Pro performance with a wide range
+          of sizes from 1.5B to 671B.</p>
+        <div class="model-badges">
+          <span class="model-badge">Tools</span>
+          <span class="model-badge">Thinking</span>
+          <span class="model-badge">1.5B-671B</span>
+        </div>
+      </a>
+
+      <!-- Qwen3-Coder Model -->
+      <a class="model-card" href="https://ollama.com/library/qwen3-coder" target="_blank" rel="noopener">
+        <div class="model-icon">💻</div>
+        <h3 class="model-name">qwen3-coder</h3>
+        <p class="model-description">Alibaba's long-context coding and agentic model line tuned for robust code
+          generation and tool use, available up to 480B.</p>
+        <div class="model-badges">
+          <span class="model-badge">Tools</span>
+          <span class="model-badge">Cloud</span>
+          <span class="model-badge">30B</span>
+          <span class="model-badge">480B</span>
+        </div>
+      </a>
 
       <!-- Gemma3 Model -->
-      <div class="model-card">
+      <a class="model-card" href="https://ollama.com/library/gemma3" target="_blank" rel="noopener">
         <div class="model-icon">💠</div>
-        <h3 class="model-name">Gemma 3</h3>
-        <p class="model-description">Latest generation Gemma model with improved performance and efficiency. Excellent for general-purpose tasks with enhanced reasoning capabilities.</p>
+        <h3 class="model-name">gemma3</h3>
+        <p class="model-description">Google's current most capable single-GPU friendly model family, spanning 270M to
+          27B with vision support.</p>
         <div class="model-badges">
-          <span class="model-badge">Latest Generation</span>
+          <span class="model-badge">Vision</span>
+          <span class="model-badge">270M-27B</span>
+          <span class="model-badge">Single GPU</span>
+        </div>
+      </a>
+
+      <!-- GLM-4.6 Model -->
+      <a class="model-card" href="https://ollama.com/library/glm-4.6" target="_blank" rel="noopener">
+        <div class="model-icon">🌐</div>
+        <h3 class="model-name">glm-4.6</h3>
+        <p class="model-description">Advanced agentic GLM series focused on reasoning and coding capabilities with cloud
+          deployment options.</p>
+        <div class="model-badges">
+          <span class="model-badge">Cloud</span>
+          <span class="model-badge">Agentic</span>
           <span class="model-badge">Reasoning</span>
-          <span class="model-badge">Efficient</span>
         </div>
-      </div>
-
-      <!-- LLaVA Model -->
-      <div class="model-card">
-        <div class="model-icon">👁️</div>
-        <h3 class="model-name">LLaVA</h3>
-        <p class="model-description">Advanced vision-language model capable of understanding and analyzing images, documents, charts, and visual content with natural language interaction.</p>
-        <div class="model-badges">
-          <span class="model-badge">Vision</span>
-          <span class="model-badge">Multimodal</span>
-          <span class="model-badge">Document Analysis</span>
-        </div>
-      </div>
-
-      <!-- Llama3.2-Vision Model -->
-      <div class="model-card">
-        <div class="model-icon">🦙</div>
-        <h3 class="model-name">Llama 3.2 Vision</h3>
-        <p class="model-description">Meta's latest vision-enabled Llama model combining powerful language understanding with image processing capabilities for multimodal AI tasks.</p>
-        <div class="model-badges">
-          <span class="model-badge">Vision</span>
-          <span class="model-badge">Meta</span>
-          <span class="model-badge">Multimodal</span>
-        </div>
-      </div>
-
-      <!-- Qwen 3 Model -->
-      <div class="model-card">
-        <div class="model-icon">🎯</div>
-        <h3 class="model-name">Qwen 3</h3>
-        <p class="model-description">Advanced large language model with strong performance across various tasks including coding, mathematics, and multilingual understanding.</p>
-        <div class="model-badges">
-          <span class="model-badge">Multilingual</span>
-          <span class="model-badge">Coding</span>
-          <span class="model-badge">Mathematics</span>
-        </div>
-      </div>
-
-      <!-- Gemma3n Model -->
-      <div class="model-card">
-        <div class="model-icon">🔷</div>
-        <h3 class="model-name">Gemma 3n</h3>
-        <p class="model-description">Nano version of Gemma 3 optimized for resource-constrained environments while maintaining high performance for lightweight AI applications.</p>
-        <div class="model-badges">
-          <span class="model-badge">Nano</span>
-          <span class="model-badge">Lightweight</span>
-          <span class="model-badge">Resource Efficient</span>
-        </div>
-      </div>
+      </a>
     </div>
 
     <!-- Call to Action -->
     <section class="card card--accent card--centered gradient-section">
       <h2 class="card-title">🚀 Try These Models with ReactorAI</h2>
-      <p class="card-lede">All featured models work seamlessly with ReactorAI. Download the app and start exploring these powerful AI models today!</p>
+      <p class="card-lede">All featured models work seamlessly with ReactorAI. Download the app and start exploring
+        these powerful AI models today!</p>
       <div class="badge-row" style="margin-top: 20px;">
         <a href="installation.html" class="button">📖 Installation Guide</a>
         <a href="documentation.html" class="button">📚 Documentation</a>
@@ -709,7 +741,7 @@
     themeToggle.addEventListener('click', () => {
       const currentTheme = body.getAttribute('data-theme');
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      
+
       body.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme', newTheme);
       updateThemeIcon(newTheme);
@@ -720,12 +752,12 @@
     }
 
     // Category filtering functionality
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       const filterBtns = document.querySelectorAll('.filter-btn');
       const newsCards = document.querySelectorAll('.news-card');
 
       filterBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function () {
           // Remove active class from all buttons
           filterBtns.forEach(b => b.classList.remove('active'));
           // Add active class to clicked button
@@ -736,7 +768,7 @@
           // Filter news cards
           newsCards.forEach(card => {
             const cardCategories = card.getAttribute('data-category');
-            
+
             if (category === 'all' || cardCategories.includes(category)) {
               card.style.display = 'block';
               card.style.animation = 'fadeIn 0.5s ease-in';
@@ -781,4 +813,5 @@
     document.head.appendChild(style);
   </script>
 </body>
+
 </html>

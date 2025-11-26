@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ReactorAI – Ollama & Gemini Client App</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="canonical" href="https://appbigas.com" />
+  <link rel="canonical" href="https://reactoraiapp.com" />
 
   <!-- ✅ SEO Meta -->
-  <meta name="description" content="ReactorAI offers free core AI functionality for connecting to Ollama's local or remote AI models and Google's Gemini. Soon with Model Context Protocol (MCP) support. Available on macOS, iOS, and Windows." />
-  <meta name="keywords" content="ReactorAI, free AI client, free core features, Ollama, Gemini, MCP, Model Context Protocol, ollama client, gemini client, free ollama app, free ai chat, ollama desktop client, ollama desktop, ollama windows, ollama ios, ollama mac, gemini mac, gemini windows, gemini ios, macOS AI client, local LLM, AI chat app, open source AI, Ollama documentation, ReactorAI guide" />
+  <meta name="description"
+    content="ReactorAI offers free core AI functionality for connecting to Ollama's local or remote AI models and Google's Gemini. Soon with Model Context Protocol (MCP) support. Available on macOS, iOS, and Windows." />
+  <meta name="keywords"
+    content="ReactorAI, free AI client, free core features, Ollama, Gemini, MCP, Model Context Protocol, ollama client, gemini client, free ollama app, free ai chat, ollama desktop client, ollama desktop, ollama windows, ollama ios, ollama mac, gemini mac, gemini windows, gemini ios, macOS AI client, local LLM, AI chat app, open source AI, Ollama documentation, ReactorAI guide" />
   <meta name="author" content="ReactorAI Team" />
   <meta name="robots" content="index, follow" />
 
   <!-- ✅ Social Meta -->
   <meta property="og:title" content="ReactorAI – Free Core Features for Ollama & Gemini" />
-  <meta property="og:description" content="ReactorAI offers free core AI functionality for Ollama and Gemini, supporting local and remote model hosting. Essential features always free." />
+  <meta property="og:description"
+    content="ReactorAI offers free core AI functionality for Ollama and Gemini, supporting local and remote model hosting. Essential features always free." />
   <meta property="og:image" content="https://reactorai.s3.amazonaws.com/logo.png" />
-  <meta property="og:url" content="https://appbigas.com" />
+  <meta property="og:url" content="https://reactoraiapp.com" />
   <meta property="og:type" content="website" />
 
   <!-- ✅ Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="ReactorAI – Free Ollama & Gemini Client for macOS, iOS, Windows" />
-  <meta name="twitter:description" content="Documentation for ReactorAI: free core features for Ollama and Gemini AI models across all platforms." />
+  <meta name="twitter:description"
+    content="Documentation for ReactorAI: free core features for Ollama and Gemini AI models across all platforms." />
   <meta name="twitter:image" content="https://reactorai.s3.amazonaws.com/logo.png" />
 
   <!-- ✅ Apple Smart Banner -->
@@ -35,7 +39,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9H9MF1VFSR"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-9H9MF1VFSR');
   </script>
@@ -47,7 +51,7 @@
     "@type": "SoftwareApplication",
     "name": "ReactorAI",
     "description": "Free AI client app for connecting to Ollama's local or remote AI models and Google's Gemini. Cross-platform support for macOS, iOS, and Windows.",
-    "url": "https://appbigas.com",
+    "url": "https://reactoraiapp.com",
     "applicationCategory": "AI Assistant",
     "operatingSystem": ["macOS", "iOS", "Windows"],
     "offers": {
@@ -89,7 +93,7 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "ReactorAI",
-    "url": "https://appbigas.com",
+    "url": "https://reactoraiapp.com",
     "logo": "https://reactorai.s3.amazonaws.com/logo.png",
     "description": "Developer of ReactorAI, a free cross-platform AI client application",
     "sameAs": [
@@ -105,71 +109,91 @@
     .fade-in {
       animation: fadeIn 0.8s ease-out;
     }
-    
+
     .slide-up {
       animation: slideUp 0.6s ease-out;
     }
-    
+
     @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
-    
+
     @keyframes slideUp {
-      from { 
+      from {
         opacity: 0;
         transform: translateY(30px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
       }
     }
-    
+
     /* Interactive elements */
     .store-links img {
       transition: transform 0.2s ease, filter 0.2s ease;
     }
-    
+
     .store-links img:hover {
       transform: scale(1.05);
       filter: brightness(1.1);
     }
-    
+
     /* Gradient sections with hover effects */
     .gradient-section {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    
+
     .gradient-section:hover {
       transform: translateY(-3px);
       box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
     }
   </style>
 </head>
+
 <body>
   <script src="theme-toggle.js"></script>
   <header>
     <div style="display: flex; align-items: center; justify-content: center; gap: 12px;">
       <img src="https://reactorai.s3.amazonaws.com/logo.png" alt="ReactorAI Logo" style="height: 50px;" />
-      <h1 style="margin: 0;">ReactorAI</h1>
+      <h1 style="margin: 0;">One Workspace. Every Model.</h1>
     </div>
-    <p>Chat with Ollama and Gemini AI models on macOS, iOS, and Windows</p>
+    <p style="font-size: 1.2em; margin: 16px 0 8px 0; font-weight: 500;">
+      🦙 Ollama • 💎 Gemini • 🤖 OpenAI<sup style="font-size: 0.7em;">*</sup> • 🧠 Claude<sup
+        style="font-size: 0.7em;">*</sup>
+    </p>
+    <p style="margin: 8px 0 20px 0; color: var(--text-secondary);">
+      Built with Flutter • One-Click Setup • For Everyone
+    </p>
+
+    <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 20px 0;">
+      <span class="feature-badge">🤖 Universal AI Workspace</span>
+      <span class="feature-badge">⚡ Intelligent Agent</span>
+      <span class="feature-badge">🚀 Cross-Platform</span>
+    </div>
 
     <!-- Store Badges -->
     <div class="store-links">
       <a href="https://apps.apple.com/eg/app/reactorai/id6739567267" target="_blank" rel="noopener">
         <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
-             alt="Download on the App Store" />
+          alt="Download on the App Store" />
       </a>
       <a href="https://apps.microsoft.com/store/detail/9NLWPTD23PG0?cid=DevShareMCLPCB" target="_blank" rel="noopener">
         <img src="https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png"
-             alt="Get it from Microsoft" />
+          alt="Get it from Microsoft" />
       </a>
     </div>
     <div class="store-links">
       <a href="https://www.buymeacoffee.com/ayman3000" target="_blank" rel="noopener">
-        <img src="https://cdn.ko-fi.com/cdn/kofi5.png?v=3" alt="Buy Me a Coffee" style="height: 36px; margin-top: 12px;" />
+        <img src="https://cdn.ko-fi.com/cdn/kofi5.png?v=3" alt="Buy Me a Coffee"
+          style="height: 36px; margin-top: 12px;" />
       </a>
       <p style="margin-top: 8px; font-size: 0.95em; color: #aaa;">
         Like ReactorAI? Support future updates ❤️
@@ -179,10 +203,11 @@
 
   <!-- Simple Top Navigation -->
   <nav class="topnav">
+    <a href="index.html" class="active">Home</a>
     <a href="installation.html">Installation</a>
     <a href="documentation.html">Documentation <span class="badge badge--small">NEW</span></a>
     <a href="prompting-guide.html">Prompting Guide</a>
-    <a href="ollama-news.html">Ollama News <span class="badge badge--small">BETA</span></a>
+    <a href="ollama-news.html">Ollama News <span class="badge badge--small badge--warm">BETA</span></a>
     <a href="faq.html">FAQ</a>
   </nav>
 
@@ -190,7 +215,8 @@
     <!-- 🎉 NEW UPDATE HIGHLIGHT -->
     <section class="card card--accent card--centered gradient-section slide-up">
       <h2 class="card-title">🚀 NEW UPDATE: Gemini Models Support!</h2>
-      <p class="card-lede">ReactorAI now supports Google's powerful Gemini models alongside Ollama! Switch between local Ollama models and cloud-based Gemini for the best of both worlds.</p>
+      <p class="card-lede">ReactorAI now supports Google's powerful Gemini models alongside Ollama! Switch between local
+        Ollama models and cloud-based Gemini for the best of both worlds.</p>
       <div class="badge-row">
         <span class="feature-badge">✨ Gemini Pro</span>
         <span class="feature-badge">🔥 Gemini Flash</span>
@@ -200,8 +226,76 @@
 
     <section class="fade-in">
       <h2>Welcome to ReactorAI</h2>
-      <p>ReactorAI is a beautifully designed, cross-platform client app that lets you interact with Ollama's local or remote AI models and Google's Gemini models seamlessly.</p>
-      <p>It's simple, privacy-respecting, and available on all major platforms.</p>
+      <p>ReactorAI is your <strong>universal AI workspace</strong> built with Flutter. One beautiful app that connects
+        to all your favorite AI models—whether they're running locally on your machine, on a remote server, or in the
+        cloud.</p>
+      <p><strong>One-click setup.</strong> No technical knowledge required. Perfect for beginners and power users alike.
+      </p>
+
+      <div class="card card--compact"
+        style="margin-top: 24px; background: var(--primary-alpha-10); border-left: 4px solid var(--color-primary);">
+        <p style="margin: 0; font-size: 0.95em;">
+          <strong>🎯 Coming Soon:</strong> OpenAI (GPT-4, ChatGPT) and Anthropic Claude support! ReactorAI will be your
+          single workspace for <em>every</em> major AI model.
+        </p>
+      </div>
+    </section>
+
+    <!-- 🤖 MODEL SUPPORT SECTION -->
+    <section class="card card--accent card--centered gradient-section slide-up" style="margin-top: 40px;">
+      <h2 class="card-title">🤖 Universal Model Support</h2>
+      <p class="card-lede">One app. All models. Your choice.</p>
+
+      <div class="feature-grid" style="margin-top: 32px;">
+        <div class="feature-card">
+          <h3 class="card-subtitle">🦙 Ollama</h3>
+          <p><strong>Local, Remote, or Cloud</strong></p>
+          <p style="font-size: 0.9em; color: var(--text-secondary);">
+            Run 100+ models on your machine, connect to your server, or use cloud hosting. Full privacy control.
+          </p>
+          <div class="badge-row" style="margin-top: 12px;">
+            <span class="badge">Llama 3.2</span>
+            <span class="badge">Mistral</span>
+            <span class="badge">CodeLlama</span>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <h3 class="card-subtitle">💎 Google Gemini</h3>
+          <p><strong>Cloud-Powered AI</strong></p>
+          <p style="font-size: 0.9em; color: var(--text-secondary);">
+            Access Google's powerful Gemini Pro and Flash models. Fast, capable, and always up-to-date.
+          </p>
+          <div class="badge-row" style="margin-top: 12px;">
+            <span class="badge">Gemini Pro</span>
+            <span class="badge">Gemini Flash</span>
+          </div>
+        </div>
+
+        <div class="feature-card" style="opacity: 0.85;">
+          <h3 class="card-subtitle">🤖 OpenAI <span class="badge badge--small badge--warm">SOON</span>
+          </h3>
+          <p><strong>GPT-4 & ChatGPT</strong></p>
+          <p style="font-size: 0.9em; color: var(--text-secondary);">
+            Soon: Access to GPT-4, GPT-4 Turbo, and ChatGPT models right from ReactorAI.
+          </p>
+        </div>
+
+        <div class="feature-card" style="opacity: 0.85;">
+          <h3 class="card-subtitle">🧠 Claude <span class="badge badge--small badge--warm">SOON</span>
+          </h3>
+          <p><strong>Claude 3 Family</strong></p>
+          <p style="font-size: 0.9em; color: var(--text-secondary);">
+            Soon: Claude 3 Opus, Sonnet, and Haiku for advanced reasoning and analysis.
+          </p>
+        </div>
+      </div>
+
+      <div class="card card--tip" style="margin-top: 32px; text-align: left;">
+        <p class="card-title" style="margin: 0 0 8px 0; font-weight: bold;">Why Universal Support Matters</p>
+        <p style="margin: 0;">No more juggling multiple apps. ReactorAI brings all your AI models into one workspace
+          with a consistent, beautiful interface. Switch between local privacy and cloud power instantly.</p>
+      </div>
     </section>
 
     <!-- 💎 WHY REACTORAI SECTION -->
@@ -214,36 +308,44 @@
 
       <div class="feature-grid">
         <div class="feature-card">
-          <h3 class="card-subtitle">🌐 Universal Access</h3>
-          <p>Works with both local Ollama models and cloud Gemini - your choice!</p>
+          <h3 class="card-subtitle">🌐 Built with Flutter</h3>
+          <p>Native performance on macOS, iOS, and Windows. One codebase, perfect experience everywhere.</p>
         </div>
         <div class="feature-card">
-          <h3 class="card-subtitle">🔒 Privacy First</h3>
-          <p>Your data stays on your device with local models, or use cloud when you need it.</p>
+          <h3 class="card-subtitle">⚡ Intelligent Agent</h3>
+          <p>Not just chat—create projects, run commands, analyze code, and interact with your file system via MCP.</p>
         </div>
         <div class="feature-card">
-          <h3 class="card-subtitle">⚡ No Setup Hassles</h3>
-          <p>Beautiful interface, instant setup - just download and start chatting!</p>
+          <h3 class="card-subtitle">🚀 One-Click Setup</h3>
+          <p>No terminal required. No technical knowledge needed. Perfect for beginners and experts alike.</p>
         </div>
       </div>
     </section>
 
     <section>
-        <h2>Why ReactorAI?</h2>
-        <ul>
-            <li><strong>🎉 Core Features Free:</strong> All essential AI functionality is completely free - chat, models, sessions, and more!</li>
-            <li><strong>Cross-Platform:</strong> Available on macOS, iOS, and Windows.</li>
-            <li><strong>Privacy-Focused:</strong> Your data stays local unless you use a remote server.</li>
-            <li><strong>Easy to Use:</strong> A simple and intuitive interface for interacting with AI models.</li>
-            <li><strong>Feature-Rich:</strong> Supports image analysis, code generation, and more.</li>
-            <li><strong>Multilingual:</strong> Supports both English and Arabic interfaces.</li>
-        </ul>
+      <h2>Why ReactorAI?</h2>
+      <ul>
+        <li><strong>🎉 Core Features Free:</strong> All essential AI functionality is completely free - chat, models,
+          sessions, and more!</li>
+        <li><strong>🤖 Universal Model Support:</strong> One app for Ollama (local/remote/cloud), Gemini, and soon
+          OpenAI & Claude.</li>
+        <li><strong>🚀 Built with Flutter:</strong> Native performance across macOS, iOS, and Windows from a single
+          codebase.</li>
+        <li><strong>⚡ Intelligent Agent:</strong> Create projects, execute commands, analyze code, and access your file
+          system through MCP.</li>
+        <li><strong>🎯 One-Click Setup:</strong> No technical knowledge required. Perfect for beginners and power users.
+        </li>
+        <li><strong>🔒 Privacy-Focused:</strong> Your data stays local unless you choose cloud models.</li>
+        <li><strong>✨ Feature-Rich:</strong> Image analysis, code generation, session management, and more.</li>
+        <li><strong>🌍 Multilingual:</strong> Supports both English and Arabic interfaces.</li>
+      </ul>
     </section>
 
     <!-- 🚀 COMING SOON SECTION -->
     <section class="card card--accent card--centered gradient-section slide-up">
       <h2 class="card-title">🚀 Coming Soon: Model Context Protocol (MCP)</h2>
-      <p class="card-lede">ReactorAI will soon support the Model Context Protocol, enabling your AI models to interact with external tools and data sources.</p>
+      <p class="card-lede">ReactorAI will soon support the Model Context Protocol, enabling your AI models to interact
+        with external tools and data sources.</p>
       <div class="badge-row">
         <span class="feature-badge">📁 File System MCP</span>
         <span class="feature-badge">🔧 Custom MCP Servers</span>
@@ -256,4 +358,5 @@
     <p>&copy; 2025 ReactorAI. All rights reserved.</p>
   </footer>
 </body>
+
 </html>

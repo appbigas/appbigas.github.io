@@ -3,7 +3,7 @@
   
   <!-- Homepage -->
   <url>
-    <loc>https://appbigas.com/</loc>
+    <loc>https://reactoraiapp.com/</loc>
     <lastmod>2025-01-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,7 +11,7 @@
   
   <!-- Installation Guide -->
   <url>
-    <loc>https://appbigas.com/installation.html</loc>
+    <loc>https://reactoraiapp.com/installation.html</loc>
     <lastmod>2025-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -19,7 +19,7 @@
   
   <!-- Documentation -->
   <url>
-    <loc>https://appbigas.com/documentation.html</loc>
+    <loc>https://reactoraiapp.com/documentation.html</loc>
     <lastmod>2025-01-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -27,7 +27,7 @@
   
   <!-- Prompting Guide -->
   <url>
-    <loc>https://appbigas.com/prompting-guide.html</loc>
+    <loc>https://reactoraiapp.com/prompting-guide.html</loc>
     <lastmod>2025-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -35,7 +35,7 @@
   
   <!-- Ollama News (Beta) -->
   <url>
-    <loc>https://appbigas.com/ollama-news.html</loc>
+    <loc>https://reactoraiapp.com/ollama-news.html</loc>
     <lastmod>2025-01-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -43,7 +43,7 @@
   
   <!-- FAQ -->
   <url>
-    <loc>https://appbigas.com/faq.html</loc>
+    <loc>https://reactoraiapp.com/faq.html</loc>
     <lastmod>2025-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -51,7 +51,7 @@
   
   <!-- Support -->
   <url>
-    <loc>https://appbigas.com/support.html</loc>
+    <loc>https://reactoraiapp.com/support.html</loc>
     <lastmod>2025-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -59,7 +59,7 @@
   
   <!-- Privacy Policy -->
   <url>
-    <loc>https://appbigas.com/privacy_policy.html</loc>
+    <loc>https://reactoraiapp.com/privacy_policy.html</loc>
     <lastmod>2025-01-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
