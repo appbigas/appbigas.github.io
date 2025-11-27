@@ -151,63 +151,63 @@
     <section>
       <h2 id="ollama-setup">1a. How to Install Ollama and Download Models</h2>
       <div class="card card--compact card--border-accent">
-        <h3 class="card-subtitle">📥 Installing Ollama</h3>
+        <h3 class="card-subtitle">Installing Ollama</h3>
 
-        <h4 class="card-subtitle">🖥️ macOS &amp; Linux:</h4>
+        <h4 class="card-subtitle">macOS &amp; Linux:</h4>
         <div class="code-block">
           <code>
 curl -fsSL https://ollama.com/install.sh | sh
           </code>
         </div>
 
-        <h4 class="card-subtitle">🪟 Windows:</h4>
+        <h4 class="card-subtitle">Windows:</h4>
         <p>Download the installer from <a href="https://ollama.com/download/windows"
             target="_blank">ollama.com/download/windows</a> and run it.</p>
 
-        <h3 class="card-subtitle" style="margin-top: 25px;">🤖 Downloading Popular Models</h3>
+        <h3 class="card-subtitle" style="margin-top: 25px;">Downloading Popular Models</h3>
 
         <h4 class="card-subtitle">Essential Models for ReactorAI:</h4>
         <div class="code-block">
           <code>
-# 🦙 General purpose model (recommended for beginners)
+# General purpose model (recommended for beginners)
 ollama pull llama3.2
 
-# 💻 Best for coding tasks
+# Best for coding tasks
 ollama pull codellama
 
-# ⚡ Fast, lightweight model
+# Fast, lightweight model
 ollama pull phi3
 
-# 🌍 Great for multilingual tasks
+# Great for multilingual tasks
 ollama pull mistral
 
-# 🧠 Advanced reasoning (larger model)
+# Advanced reasoning (larger model)
 ollama pull llama3.1:70b
           </code>
         </div>
 
-        <h3 class="card-subtitle" style="margin-top: 25px;">🔧 Essential Commands</h3>
+        <h3 class="card-subtitle" style="margin-top: 25px;">Essential Commands</h3>
 
         <div class="code-block">
           <code>
-# 📋 List installed models
+# List installed models
 ollama list
 
-# 🚀 Start ollama service
+# Start ollama service
 ollama serve
 
-# 💬 Test a model interactively
+# Test a model interactively
 ollama run llama3.2
 
-# 🗑️ Remove a model
+# Remove a model
 ollama rm modelname
 
-# 📥 Pull specific model version
+# Pull specific model version
 ollama pull llama3.2:3b
           </code>
         </div>
 
-        <h3 class="card-subtitle" style="margin-top: 25px;">💡 Tips for ReactorAI Users</h3>
+        <h3 class="card-subtitle" style="margin-top: 25px;">Tips for ReactorAI Users</h3>
         <ul>
           <li><strong>Start Small:</strong> Begin with <code>llama3.2</code> or <code>phi3</code> - they're fast and
             work great</li>
