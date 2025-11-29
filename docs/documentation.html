@@ -218,6 +218,28 @@
         <p>You can extend ReactorAI with <strong>any MCP server</strong>, just like you do with Claude Desktop. The
           configuration is compatible and simple.</p>
 
+        <div class="card card--compact card--border-accent" style="margin: 24px 0;">
+          <h4 class="card-subtitle" style="margin-top: 0;">Prerequisites: Node.js & uv</h4>
+          <p>Most MCP servers require a runtime environment. Ensure you have these installed:</p>
+
+          <ul style="margin-bottom: 12px;">
+            <li><strong>Node.js:</strong> Required for <code>npx</code> servers. <a href="https://nodejs.org/"
+                target="_blank">Download Here</a>.</li>
+            <li><strong>uv:</strong> Required for Python <code>uv</code> servers. See installation below.</li>
+          </ul>
+
+          <div class="code-block" style="background: rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.1);">
+            <p style="margin: 0 0 8px 0; font-size: 0.9em;"><strong>Install uv (macOS/Linux):</strong></p>
+            <code style="font-size: 0.9em;">curl -LsSf https://astral.sh/uv/install.sh | sh</code>
+
+            <p style="margin: 12px 0 8px 0; font-size: 0.9em;"><strong>Install uv (Windows):</strong></p>
+            <code style="font-size: 0.9em;">powershell -c "irm https://astral.sh/uv/install.ps1 | iex"</code>
+
+            <p style="margin: 12px 0 8px 0; font-size: 0.9em;"><strong>Install uv (via pip):</strong></p>
+            <code style="font-size: 0.9em;">pip install uv</code>
+          </div>
+        </div>
+
         <div class="code-block">
           <h4 style="margin: 0 0 8px 0;">How to Add a Custom MCP:</h4>
           <ol style="margin-left: 20px; margin-bottom: 16px;">
