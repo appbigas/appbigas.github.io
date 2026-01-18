@@ -366,7 +366,6 @@
   <!-- Simple Top Navigation -->
   <nav class="topnav">
     <a href="index.html">Home</a>
-    <a href="kommanda.html">Kommanda</a>
     <a href="installation.html">Installation</a>
     <a href="documentation.html">Documentation <span class="badge badge--small">NEW</span></a>
     <a href="prompting-guide.html">Prompting Guide</a>
@@ -389,18 +388,30 @@
     </section>
 
     <div class="models-container">
-      <!-- GPT-OSS Model -->
-      <a class="model-card" href="https://ollama.com/library/gpt-oss" target="_blank" rel="noopener">
-        <div class="model-icon">🛠️</div>
-        <h3 class="model-name">gpt-oss</h3>
-        <p class="model-description">OpenAI's open-weight series for powerful reasoning, agentic tasks, and versatile
-          developer workflows across 20B and 120B sizes.</p>
+      <!-- Nemotron-3-Nano Model -->
+      <a class="model-card" href="https://ollama.com/library/nemotron-3-nano" target="_blank" rel="noopener">
+        <div class="model-icon">⚡</div>
+        <h3 class="model-name">nemotron-3-nano</h3>
+        <p class="model-description">A new standard for efficient, open, and intelligent agentic models. NVIDIA's latest
+          offering for powerful reasoning at 30B parameters.</p>
         <div class="model-badges">
           <span class="model-badge">Tools</span>
           <span class="model-badge">Thinking</span>
           <span class="model-badge">Cloud</span>
-          <span class="model-badge">20B</span>
-          <span class="model-badge">120B</span>
+          <span class="model-badge">30B</span>
+        </div>
+      </a>
+
+      <!-- Devstral-2 Model -->
+      <a class="model-card" href="https://ollama.com/library/devstral-2" target="_blank" rel="noopener">
+        <div class="model-icon">🛠️</div>
+        <h3 class="model-name">devstral-2</h3>
+        <p class="model-description">A 123B model that excels at complex tool use and software engineering tasks,
+          perfect for powering coding agents.</p>
+        <div class="model-badges">
+          <span class="model-badge">Tools</span>
+          <span class="model-badge">Cloud</span>
+          <span class="model-badge">123B</span>
         </div>
       </a>
 
@@ -408,66 +419,53 @@
       <a class="model-card" href="https://ollama.com/library/qwen3-vl" target="_blank" rel="noopener">
         <div class="model-icon">👁️</div>
         <h3 class="model-name">qwen3-vl</h3>
-        <p class="model-description">Qwen family's top vision-language model with strong multimodal reasoning from 2B up
-          to 235B variants.</p>
+        <p class="model-description">The most powerful vision-language model in the Qwen family with strong multimodal
+          reasoning from 2B up to 235B variants.</p>
         <div class="model-badges">
           <span class="model-badge">Vision</span>
           <span class="model-badge">Tools</span>
-          <span class="model-badge">Cloud</span>
+          <span class="model-badge">Thinking</span>
           <span class="model-badge">2B-235B</span>
         </div>
       </a>
 
-      <!-- DeepSeek-R1 Model -->
-      <a class="model-card" href="https://ollama.com/library/deepseek-r1" target="_blank" rel="noopener">
-        <div class="model-icon">🧠</div>
-        <h3 class="model-name">deepseek-r1</h3>
-        <p class="model-description">Open reasoning family approaching O3/Gemini 2.5 Pro performance with a wide range
-          of sizes from 1.5B to 671B.</p>
-        <div class="model-badges">
-          <span class="model-badge">Tools</span>
-          <span class="model-badge">Thinking</span>
-          <span class="model-badge">1.5B-671B</span>
-        </div>
-      </a>
-
-      <!-- Qwen3-Coder Model -->
-      <a class="model-card" href="https://ollama.com/library/qwen3-coder" target="_blank" rel="noopener">
-        <div class="model-icon">💻</div>
-        <h3 class="model-name">qwen3-coder</h3>
-        <p class="model-description">Alibaba's long-context coding and agentic model line tuned for robust code
-          generation and tool use, available up to 480B.</p>
-        <div class="model-badges">
-          <span class="model-badge">Tools</span>
-          <span class="model-badge">Cloud</span>
-          <span class="model-badge">30B</span>
-          <span class="model-badge">480B</span>
-        </div>
-      </a>
-
-      <!-- Gemma3 Model -->
-      <a class="model-card" href="https://ollama.com/library/gemma3" target="_blank" rel="noopener">
-        <div class="model-icon">💠</div>
-        <h3 class="model-name">gemma3</h3>
-        <p class="model-description">Google's current most capable single-GPU friendly model family, spanning 270M to
-          27B with vision support.</p>
+      <!-- Ministral-3 Model -->
+      <a class="model-card" href="https://ollama.com/library/ministral-3" target="_blank" rel="noopener">
+        <div class="model-icon">📱</div>
+        <h3 class="model-name">ministral-3</h3>
+        <p class="model-description">Mistral's models designed for edge deployment on a wide range of hardware with
+          vision and tool support.</p>
         <div class="model-badges">
           <span class="model-badge">Vision</span>
-          <span class="model-badge">270M-27B</span>
-          <span class="model-badge">Single GPU</span>
+          <span class="model-badge">Tools</span>
+          <span class="model-badge">Edge</span>
+          <span class="model-badge">3B-14B</span>
         </div>
       </a>
 
-      <!-- GLM-4.6 Model -->
-      <a class="model-card" href="https://ollama.com/library/glm-4.6" target="_blank" rel="noopener">
-        <div class="model-icon">🌐</div>
-        <h3 class="model-name">glm-4.6</h3>
-        <p class="model-description">Advanced agentic GLM series focused on reasoning and coding capabilities with cloud
-          deployment options.</p>
+      <!-- FunctionGemma Model -->
+      <a class="model-card" href="https://ollama.com/library/functiongemma" target="_blank" rel="noopener">
+        <div class="model-icon">🔧</div>
+        <h3 class="model-name">functiongemma</h3>
+        <p class="model-description">Specialized version of Google's Gemma 3 270M model fine-tuned for function calling.
+          Perfect for lightweight tool use.</p>
         <div class="model-badges">
-          <span class="model-badge">Cloud</span>
-          <span class="model-badge">Agentic</span>
-          <span class="model-badge">Reasoning</span>
+          <span class="model-badge">Tools</span>
+          <span class="model-badge">Lightweight</span>
+          <span class="model-badge">270M</span>
+        </div>
+      </a>
+
+      <!-- OLMo-3 Model -->
+      <a class="model-card" href="https://ollama.com/library/olmo-3" target="_blank" rel="noopener">
+        <div class="model-icon">🌐</div>
+        <h3 class="model-name">olmo-3</h3>
+        <p class="model-description">Fully open, state-of-the-art language models by AI2 trained on Dolma 3. Available
+          in 7B and 32B variants.</p>
+        <div class="model-badges">
+          <span class="model-badge">Open Source</span>
+          <span class="model-badge">7B</span>
+          <span class="model-badge">32B</span>
         </div>
       </a>
     </div>
@@ -490,132 +488,120 @@
 
     <!-- News Cards Section -->
     <section class="news-container">
-      <!-- Latest News Card -->
-      <article class="news-card" data-category="latest language-models">
-        <div class="news-header">
-          <h3 class="news-title">Llama 3.3 70B Released</h3>
-          <time class="news-date" datetime="2024-12-06">December 6, 2024</time>
-        </div>
-        <span class="news-category">Language Models</span>
-        <img src="https://reactorai.s3.amazonaws.com/news/llama-3-3-preview.png" alt="Llama 3.3 70B model preview"
-          class="news-image" onerror="this.style.display='none'">
-        <p class="news-summary">Meta releases Llama 3.3 70B with significantly improved reasoning capabilities and
-          better multilingual support. This model shows substantial improvements in code generation and mathematical
-          problem-solving.</p>
-        <div class="news-footer">
-          <a href="https://ollama.com/library/llama3.3" target="_blank" rel="noopener" class="read-more-btn">Learn
-            More</a>
-          <div class="news-tags">
-            <span class="tag">Reasoning</span>
-            <span class="tag">70B</span>
-            <span class="tag">Multilingual</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Code Models News -->
+      <!-- Claude Code with Anthropic API -->
       <article class="news-card" data-category="latest code-models">
         <div class="news-header">
-          <h3 class="news-title">CodeLlama 34B Python Specialist</h3>
-          <time class="news-date" datetime="2023-08-24">August 24, 2023</time>
+          <h3 class="news-title">Claude Code with Anthropic API Compatibility</h3>
+          <time class="news-date" datetime="2026-01-16">January 16, 2026</time>
         </div>
-        <span class="news-category">Code Models</span>
-        <img src="https://reactorai.s3.amazonaws.com/news/codellama-python.png"
-          alt="CodeLlama Python specialist preview" class="news-image" onerror="this.style.display='none'">
-        <p class="news-summary">CodeLlama variant specifically fine-tuned for Python development. Excels at Python
-          frameworks, debugging, and code optimization with improved context understanding.</p>
+        <span class="news-category">Integration</span>
+        <p class="news-summary">Ollama is now compatible with the Anthropic Messages API, making it possible to use
+          tools like Claude Code with open models running locally.</p>
         <div class="news-footer">
-          <a href="https://ollama.com/library/codellama:python" target="_blank" rel="noopener"
-            class="read-more-btn">Learn More</a>
-          <div class="news-tags">
-            <span class="tag">Python</span>
-            <span class="tag">34B</span>
-            <span class="tag">Debugging</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Multimodal News -->
-      <article class="news-card" data-category="latest multimodal">
-        <div class="news-header">
-          <h3 class="news-title">LLaVA 1.6 34B Vision Model</h3>
-          <time class="news-date" datetime="2024-01-30">January 30, 2024</time>
-        </div>
-        <span class="news-category">Multimodal</span>
-        <img src="https://reactorai.s3.amazonaws.com/news/llava-vision.png" alt="LLaVA vision model preview"
-          class="news-image" onerror="this.style.display='none'">
-        <p class="news-summary">Enhanced LLaVA model with better image understanding and detailed visual analysis
-          capabilities. Perfect for document analysis, chart interpretation, and visual reasoning tasks.</p>
-        <div class="news-footer">
-          <a href="https://ollama.com/library/llava" target="_blank" rel="noopener" class="read-more-btn">Learn More</a>
-          <div class="news-tags">
-            <span class="tag">Vision</span>
-            <span class="tag">34B</span>
-            <span class="tag">Documents</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Specialized Model News -->
-      <article class="news-card" data-category="specialized">
-        <div class="news-header">
-          <h3 class="news-title">Mistral 7B Instruct v0.3</h3>
-          <time class="news-date" datetime="2024-05-22">May 22, 2024</time>
-        </div>
-        <span class="news-category">Specialized</span>
-        <img src="https://reactorai.s3.amazonaws.com/news/mistral-instruct.png" alt="Mistral Instruct model preview"
-          class="news-image" onerror="this.style.display='none'">
-        <p class="news-summary">Updated Mistral 7B with improved instruction following and better performance on
-          creative writing tasks. Optimized for efficiency while maintaining high quality outputs.</p>
-        <div class="news-footer">
-          <a href="https://ollama.com/library/mistral" target="_blank" rel="noopener" class="read-more-btn">Learn
+          <a href="https://ollama.com/blog/claude-code" target="_blank" rel="noopener" class="read-more-btn">Learn
             More</a>
           <div class="news-tags">
-            <span class="tag">Instruct</span>
-            <span class="tag">7B</span>
-            <span class="tag">Creative</span>
+            <span class="tag">Anthropic API</span>
+            <span class="tag">Claude Code</span>
+            <span class="tag">Integration</span>
           </div>
         </div>
       </article>
 
-      <!-- Community Highlight -->
-      <article class="news-card" data-category="latest">
+      <!-- OpenAI Codex with Ollama -->
+      <article class="news-card" data-category="latest code-models">
         <div class="news-header">
-          <h3 class="news-title">Community Model: Solar 10.7B</h3>
-          <time class="news-date" datetime="2023-12-27">December 27, 2023</time>
+          <h3 class="news-title">OpenAI Codex with Ollama</h3>
+          <time class="news-date" datetime="2026-01-15">January 15, 2026</time>
         </div>
-        <span class="news-category">Community</span>
-        <img src="https://reactorai.s3.amazonaws.com/news/solar-model.png" alt="Solar community model preview"
-          class="news-image" onerror="this.style.display='none'">
-        <p class="news-summary">Community-developed Solar 10.7B model gaining popularity for its balanced performance
-          across various tasks. Great alternative for users seeking efficiency without sacrificing quality.</p>
+        <span class="news-category">Integration</span>
+        <p class="news-summary">Open models can now be used with OpenAI's Codex CLI through Ollama. Codex can read,
+          modify, and execute code using models such as gpt-oss:20b, gpt-oss:120b.</p>
         <div class="news-footer">
-          <a href="https://ollama.com/library/solar" target="_blank" rel="noopener" class="read-more-btn">Learn More</a>
+          <a href="https://ollama.com/blog/codex" target="_blank" rel="noopener" class="read-more-btn">Learn More</a>
           <div class="news-tags">
-            <span class="tag">Community</span>
-            <span class="tag">10.7B</span>
-            <span class="tag">Efficient</span>
+            <span class="tag">Codex</span>
+            <span class="tag">gpt-oss</span>
+            <span class="tag">Coding</span>
           </div>
         </div>
       </article>
 
-      <!-- ReactorAI Integration -->
-      <article class="news-card" data-category="latest">
+      <!-- GPT-OSS Safeguard -->
+      <article class="news-card" data-category="latest specialized">
         <div class="news-header">
-          <h3 class="news-title">ReactorAI Model Compatibility Update</h3>
-          <time class="news-date" datetime="2024-12-01">December 1, 2024</time>
+          <h3 class="news-title">OpenAI gpt-oss-safeguard</h3>
+          <time class="news-date" datetime="2025-10-29">October 29, 2025</time>
         </div>
-        <span class="news-category">ReactorAI</span>
-        <img src="https://reactorai.s3.amazonaws.com/news/reactorai-update.png" alt="ReactorAI compatibility update"
-          class="news-image" onerror="this.style.display='none'">
-        <p class="news-summary">ReactorAI now supports all latest Ollama models with improved model switching and
-          enhanced chat history management. Update available on all platforms.</p>
+        <span class="news-category">Safety Models</span>
+        <p class="news-summary">Ollama partners with OpenAI and ROOST to bring gpt-oss-safeguard reasoning models for
+          safety classification. Available in 20B and 120B sizes under Apache 2.0 license.</p>
         <div class="news-footer">
-          <a href="https://ollama.com/library" target="_blank" rel="noopener" class="read-more-btn">Learn More</a>
+          <a href="https://ollama.com/blog/gpt-oss-safeguard" target="_blank" rel="noopener" class="read-more-btn">Learn
+            More</a>
           <div class="news-tags">
-            <span class="tag">ReactorAI</span>
-            <span class="tag">Update</span>
-            <span class="tag">Compatibility</span>
+            <span class="tag">Safety</span>
+            <span class="tag">OpenAI</span>
+            <span class="tag">Apache 2.0</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- New Coding Models & Integrations -->
+      <article class="news-card" data-category="latest code-models">
+        <div class="news-header">
+          <h3 class="news-title">New Coding Models & Integrations</h3>
+          <time class="news-date" datetime="2025-10-16">October 16, 2025</time>
+        </div>
+        <span class="news-category">Code Models</span>
+        <p class="news-summary">GLM-4.6 and Qwen3-coder-480B are available on Ollama's cloud service. Qwen3-Coder-30B
+          updated for faster, more reliable tool calling in Ollama's new engine.</p>
+        <div class="news-footer">
+          <a href="https://ollama.com/blog/new-coding-models" target="_blank" rel="noopener" class="read-more-btn">Learn
+            More</a>
+          <div class="news-tags">
+            <span class="tag">GLM-4.6</span>
+            <span class="tag">Qwen3-Coder</span>
+            <span class="tag">Tools</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Qwen3-VL -->
+      <article class="news-card" data-category="latest multimodal">
+        <div class="news-header">
+          <h3 class="news-title">Qwen3-VL Vision Model</h3>
+          <time class="news-date" datetime="2025-10-14">October 14, 2025</time>
+        </div>
+        <span class="news-category">Multimodal</span>
+        <p class="news-summary">Ollama now supports Alibaba's Qwen3-VL, the most powerful vision-language model in the
+          Qwen family with robust multimodal reasoning capabilities.</p>
+        <div class="news-footer">
+          <a href="https://ollama.com/blog/qwen3-vl" target="_blank" rel="noopener" class="read-more-btn">Learn More</a>
+          <div class="news-tags">
+            <span class="tag">Vision</span>
+            <span class="tag">Qwen3-VL</span>
+            <span class="tag">Alibaba</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- NVIDIA DGX Spark -->
+      <article class="news-card" data-category="latest specialized">
+        <div class="news-header">
+          <h3 class="news-title">NVIDIA DGX Spark Support</h3>
+          <time class="news-date" datetime="2025-10-13">October 13, 2025</time>
+        </div>
+        <span class="news-category">Hardware</span>
+        <p class="news-summary">The latest NVIDIA DGX Spark is here! Ollama has partnered with NVIDIA to ensure it runs
+          fast and efficiently out-of-the-box for enterprise deployments.</p>
+        <div class="news-footer">
+          <a href="https://ollama.com/blog/nvidia-spark" target="_blank" rel="noopener" class="read-more-btn">Learn
+            More</a>
+          <div class="news-tags">
+            <span class="tag">NVIDIA</span>
+            <span class="tag">DGX Spark</span>
+            <span class="tag">Enterprise</span>
           </div>
         </div>
       </article>

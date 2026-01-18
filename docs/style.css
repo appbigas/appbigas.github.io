@@ -165,6 +165,10 @@ header h1 {
   border-bottom: 1px solid #333;
   text-align: center;
   transition: background-color 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 16px;
 }
 
 [data-theme="light"] .topnav {
@@ -174,12 +178,16 @@ header h1 {
 .topnav a {
   color: var(--link-color);
   text-decoration: none;
-  margin: 0 16px;
   font-weight: bold;
   /* Smooth hover transitions */
   transition: color 0.2s ease, text-shadow 0.2s ease;
   padding: 8px 12px;
   border-radius: 6px;
+  /* Keep link and badge together */
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .topnav a:hover {
